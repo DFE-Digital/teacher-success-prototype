@@ -22,8 +22,11 @@ $govuk-suppressed-warnings: ("legacy-organisation-colours");
 .dfe-content-page--header a.govuk-link:link {
   color: rgb(21.361971831, 82.5014084507, 135.538028169);
 }
+.dfe-content-page--header img.logo {
+  max-width: 260px;
+}
+
 .dfe-content-page--header img {
-  max-width: 220px;
   width: 100%;
 }
 @media (max-width: 40.0525em) {
@@ -379,5 +382,138 @@ a.dfe-vertical-nav__link {
 
     li{
         float: right;
+    }
+}
+
+
+//cta banner
+
+
+.cta-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(234.7, 241.9, 246.4);
+}
+@media (max-width: 40.0525em) {
+  .cta-banner {
+    flex-direction: column;
+  }
+}
+
+.cta-banner-text {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (max-width: 40.0525em) {
+  .cta-banner-text {
+    order: 2;
+    padding: 20px;
+  }
+}
+
+.cta-banner-img {
+  width: 40%;
+  display: flex;
+}
+@media (max-width: 40.0525em) {
+  .cta-banner-img {
+    width: 100%;
+    order: 1;
+  }
+}
+
+.full-width-image {
+    max-width: 100%;
+}
+
+
+
+
+//prompt box
+
+
+.prompt {
+  background-color: #f3f2f1;
+  border-top: #28a197 solid 10px;
+  margin: 25px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.prompt .svg-inline--fa {
+  background-color: #28a197;
+  color: #ffffff;
+  padding: 20px !important;
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  top: -15px;
+  left: -30px;
+}
+.prompt .govuk-grid-column-one-quarter {
+  margin-right: -120px;
+}
+.prompt .govuk-grid-column-three-quarters {
+  padding: 15px;
+}
+@media (min-width: 40em) and (max-width: 61.5em) {
+  .prompt .govuk-grid-column-three-quarters {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 40.0625em) {
+  .prompt .small-screen-padding-right {
+    padding-right: 20px;
+  }
+}
+.prompt.prompt-bg {
+  background-color: rgb(211.7462686567, 244.2537313433, 241.5671641791);
+}
+.prompt.prompt-home {
+  background: rgb(234.7, 241.9, 246.4);
+  border-top: #347ca9 solid 10px;
+}
+@media (min-width: 48.0625em) {
+  .prompt.prompt-home .govuk-grid-column-one-quarter {
+    margin-right: -220px;
+  }
+}
+.prompt.prompt-home .svg-inline--fa {
+  background-color: #347ca9 !important;
+}
+
+
+//light grey box
+
+
+.light-grey-box {
+  padding: 25px;
+  margin-bottom: 25px;
+  background: #f3f2f1;
+}
+@media (max-width: 40.0525em) {
+  .light-grey-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.light-grey-box.enrol-box {
+  border-radius: 6px;
+}
+.light-grey-box.enrol-box .govuk-button {
+  margin: 0;
+}
+
+
+.header-nav{
+    li{
+        @media (max-width: 40.0525em) {
+            float: left;
+            line-height: 25px;
+            padding-top: 0px;
+        }
+        float: right;
+        line-height: 45px;
+        padding-top: 15px;
     }
 }
