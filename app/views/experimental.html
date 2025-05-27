@@ -1,0 +1,76 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+  <!--
+  <div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+      <div class="govuk-grid-row govuk-!-padding-top-4">
+        <div class="govuk-grid-column-three-quarters">
+          <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Teacher Success Hub</h1>
+          <p class="govuk-body-l">Whether you want information on training, resources during training, or a space to connect with other trainees, the Teacher Training Hub is the place for all trainees.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+  <section class="fe-header-full-image">
+      <img src="/public/images/homebanner.png" alt="" aria-hidden="true">
+      <div class="fe-header-full-image-text-overlay fe-header-full-image-text-overlay-lines-3" aria-hidden="true">
+              <span class="back-color-yellow">Teacher Training Hub</span>
+      </div>    
+  </section>
+
+  <div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1"><div class="dfe-width-container"><div class="govuk-grid-row govuk-!-padding-top-4"><div class="govuk-grid-column-three-quarters"><h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Help for early years providers</h1><p class="govuk-body-l">Resources, activities and support articles for childminders and practitioners working with children aged 0-5 years.</p></div></div></div></div>
+
+  <div class="fe-preamble govuk-!-padding-bottom-6 back-color-340058232280">
+        <section class="dfe-page-header dfe-page-header--with-sub-nav">
+
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row govuk-!-margin-top-5">
+                    <div class="govuk-grid-column-two-thirds">
+                      <h2 class="govuk-heading">Get everything you need whilst learning to teach</h2>
+                      <p class="govuk-body govuk-!-margin-bottom-6">Whether you want information on training, resources during training, or a space to connect with other trainees, the Teacher Training Hub is the place for all trainees.</p>
+                    </div>
+                    <div class="govuk-grid-column-one-third govuk-!-padding-top-2">
+                        <img src="/public/images/teacherlogo.svg" class="teaching-fe-logo" alt="teaching fe logo" tabindex="-1">
+                    </div>
+                </div>
+                    
+            </div>
+        </section>
+  </div>
+
+  <div class="govuk-width-container">
+
+
+  <div class="govuk-main-wrapper">
+
+    <div class="dfe-grid-container">
+    <div class="dfe-card">
+        <img src="/public/images/teacher1.png" alt="Sample Image">
+        <div class="dfe-card-container">
+          <h3 class="govuk-heading-m">
+              <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Search for your teaching role</a>
+          </h3>
+          <p>Most schools advertise their roles this time of year. Visit Teaching Vacancies to view roles available for September.</p>
+        </div>
+    </div>
+    <div class="dfe-card">
+        <img src="/public/images/teacher2.png" alt="Sample Image">
+        <div class="dfe-card-container">
+          <h3 class="govuk-heading-m">
+              <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Give training feedback</a>
+          </h3>
+          <p>You're halfway through your training year. Give quick feedback on how you've found it so far. Your views can make a difference for future trainees.</p>
+        </div>
+    </div>
+  </div>
+
+   
+
+
+{% endblock %}

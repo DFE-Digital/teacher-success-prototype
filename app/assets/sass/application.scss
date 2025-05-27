@@ -1,0 +1,383 @@
+//
+// For guidance on how to add CSS and SCSS see:
+// https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
+// 
+
+// Add extra styles here
+
+$govuk-suppressed-warnings: ("legacy-organisation-colours");
+
+
+
+@import 'node_modules/dfe-frontend/packages/dfefrontend';
+
+.govuk-width-container {
+    @include govuk-width-container;
+}
+
+
+.dfe-content-page--header {
+  background: rgb(234.7, 241.9, 246.4);
+}
+.dfe-content-page--header a.govuk-link:link {
+  color: rgb(21.361971831, 82.5014084507, 135.538028169);
+}
+.dfe-content-page--header img {
+  max-width: 220px;
+  width: 100%;
+}
+@media (max-width: 40.0525em) {
+  .dfe-content-page--header img {
+    padding-top: 20px;
+  }
+}
+.dfe-header__navigation{
+    max-width: none;
+}
+
+.dfe-header__container{
+    padding-bottom: 15px;
+}
+
+
+.dfe-header__service-name {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+@media (max-width: 61.865em) {
+  .dfe-header__service-name {
+    max-width: 100%;
+  }
+}
+
+#main-content{
+    max-width: none;
+    padding-top:0px;
+    padding-bottom: 0px;
+}
+
+.govuk-main-wrapper{
+    max-width: 1200px;
+}
+
+
+.fe-header-full-image {
+    position: relative;
+    height: 599px
+}
+
+.fe-header-full-image img {
+    width: 100%;
+    height: 599px;
+    object-fit: cover;
+    object-position: top
+}
+
+@media(max-width: 768px) {
+    .fe-header-full-image {
+        height:190px
+    }
+
+    .fe-header-full-image img {
+        height: 190px
+    }
+}
+
+.fe-header-full-image-text-overlay {
+    position: absolute;
+    left: max(calc(0px),calc(((100vw - 1200px)/2) - 42px));
+    color: #000;
+    text-align: left
+}
+
+.fe-header-full-image-text-overlay span {
+    padding: 0 20px 0 42px;
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: "BC-Bold",Arial,sans-serif;
+    line-height: 1.2
+}
+
+.fe-header-full-image-text-overlay-lines-1 {
+    top: 260px
+}
+
+.fe-header-full-image-text-overlay-lines-2 {
+    top: 170px
+}
+
+.fe-header-full-image-text-overlay-lines-3 {
+    top: 160px
+}
+
+@media(min-width: 40.0625em) and (max-width:61.865em) {
+    .fe-header-full-image-text-overlay-lines-1 {
+        top:260px
+    }
+
+    .fe-header-full-image-text-overlay-lines-2 {
+        top: 170px
+    }
+
+    .fe-header-full-image-text-overlay-lines-3 {
+        top: 160px
+    }
+
+    .fe-header-full-image-text-overlay span {
+        font-size: 4rem
+    }
+}
+
+@media(max-width: 48.0525em) {
+    .fe-header-full-image-text-overlay-lines-1 {
+        top:85px
+    }
+
+    .fe-header-full-image-text-overlay-lines-2 {
+        top: 40px
+    }
+
+    .fe-header-full-image-text-overlay-lines-3 {
+        top: 40px
+    }
+
+    .fe-header-full-image-text-overlay span {
+        font-size: 2rem;
+        padding: 0 20px 0 32px
+    }
+}
+
+.back-color-yellow {
+    background-color: #FBBB21;
+} 
+
+.back-color-340058232280 {
+    background-color: #FFF1E5;
+}
+
+.dfe-header__search{
+    img{
+        width:200px;
+        height: auto;
+    }
+}
+
+.fe-preamble{
+    display: inline-block;
+    width:100%;
+}
+
+.teaching-fe-logo {
+    flex-shrink: 0;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    max-width: 220px;
+}
+
+
+.govuk-header__link .govuk-header__logotype{
+  height: 30px;
+}
+
+.govuk-header__link:focus .govuk-header__logotype{
+  content: url(/public/images/department-for-education_black.png);
+  height: 30px;
+}
+
+
+.hf-ctas {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hf-icon {
+  background:#FBBB21;
+  display: inline-flex;
+  padding: 10px;
+  border-radius: 50%;
+
+  &.blue{
+    background: rgb(234.7, 241.9, 246.4);
+
+    path{
+        fill: #347ca9;
+    }
+  }
+}
+.hf-icon path {
+  fill: #000000;
+}
+
+.hf-citation {
+  background: rgba(238, 238, 238, 0.4588235294);
+  padding: 15px 10px 15px 20px;
+  margin-top: 60px;
+  border-left: 5px solid #347ca9;
+}
+
+.hf-other {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hf-cta-block {
+  display: flex;
+  column-gap: 20px;
+}
+.hf-cta-block p {
+  font-size: 1.1875em;
+}
+
+
+
+
+
+
+.chevron-card-list {
+    list-style: none;
+    margin: 0 -15px;
+    padding: 0;
+}
+
+.chevron-card {
+    border-top: 1px solid #b1b4b6;
+    margin: 0 15px;
+    padding: 5px 0 20px;
+}
+
+.chevron-card:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.chevron-card__wrapper {
+    padding: 19px 0 4px;
+    position: relative;
+}
+
+.dfe-content-page--header a.govuk-link:link {
+    color: rgb(21.361971831, 82.5014084507, 135.538028169);
+}
+
+.chevron-card__link::before {
+    border-right: 3px solid #1d70b8;
+    border-top: 3px solid #1d70b8;
+    content: "";
+    display: block;
+    height: 7px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: 5px;
+    -webkit-transform: translateY(0) rotate(45deg) scale(1);
+    -ms-transform: translateY(0) rotate(45deg) scale(1);
+    transform: translateY(0) rotate(45deg) scale(1);
+    width: 7px;
+}
+
+.chevron-card__link::after {
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+//dfe vertical nav
+
+.govuk-breadcrumbs li {
+    font-size: 16px;
+}
+
+.dfe-vertical-nav {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.14286;
+    padding-left: 15px;
+    margin-left: -15px;
+}
+
+.dfe-vertical-nav .dfe-vertical-nav--section-header {
+    font-size: 19px;
+    line-height: 1.25;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-top: 0;
+}
+
+.dfe-vertical-nav__section {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.dfe-vertical-nav__section-item--current {
+    border-left: 4px solid #003a69;
+    font-weight: 700;
+    background: #f3f2f1;
+}
+
+.dfe-vertical-nav__section-item {
+    border-left: 4px solid #b1b4b6;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+a.dfe-vertical-nav__link {
+    display: block;
+    padding: 7px 30px 8px 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: #003a69;
+    font-size: 16px;
+}
+
+//feedback CTA
+
+#feedback-cta {
+    padding: 25px;
+    background-color: #347ca9;
+}
+
+#feedback-cta * {
+    color: #ffffff;
+}
+
+#feedback-cta .govuk-button {
+    background-color: #347ca9;
+    border-color: #ffffff;
+    box-shadow: none;
+}
+
+.three-col{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+
+.govuk-template--rebranded .govuk-header__navigation {
+    margin-bottom: 0;
+    padding: 12px 0 0px;
+
+    li{
+        float: right;
+    }
+}
