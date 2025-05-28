@@ -33,7 +33,7 @@ $govuk-suppressed-warnings: ("legacy-organisation-colours");
 
 .govuk-template--rebranded .govuk-header__navigation-item{
    @media (max-width: 40.0525em) {
-    padding-top: 0px ;
+    padding-top: 0px;
   }
 }
 
@@ -590,4 +590,27 @@ a.dfe-vertical-nav__link {
     list-style: none;
   }
 
+}
+
+//markdown articles
+
+ .markdown>h2, .text-content>h2 {
+    background-color: #00b1eb;
+    color: #1d1d1b;
+    display: inline-block;
+    padding: .6rem 1.5rem;
+    box-sizing: border-box;
+    max-width: calc(100% - 1.25rem);
+}
+
+section.inset-text.yellow {
+    background-color: #fef0cb;
+    border-left-color: #1d1d1b;
+}
+
+section.inset-text {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border-left: 6px solid;
 }
