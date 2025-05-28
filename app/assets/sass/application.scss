@@ -24,6 +24,17 @@ $govuk-suppressed-warnings: ("legacy-organisation-colours");
 }
 .dfe-content-page--header img.logo {
   max-width: 260px;
+
+  @media (max-width: 40.0525em) {
+    max-width: 150px;
+  }
+
+}
+
+.govuk-template--rebranded .govuk-header__navigation-item{
+   @media (max-width: 40.0525em) {
+    padding-top: 0px ;
+  }
 }
 
 .dfe-content-page--header img {
@@ -31,7 +42,7 @@ $govuk-suppressed-warnings: ("legacy-organisation-colours");
 }
 @media (max-width: 40.0525em) {
   .dfe-content-page--header img {
-    padding-top: 20px;
+    padding-top: 0px;
   }
 }
 .dfe-header__navigation{
