@@ -360,14 +360,12 @@ a.dfe-vertical-nav__link {
     background-color: #347ca9;
 }
 
-#feedback-cta * {
+#feedback-cta p {
     color: #ffffff;
 }
 
 #feedback-cta .govuk-button {
-    background-color: #347ca9;
-    border-color: #ffffff;
-    box-shadow: none;
+   
 }
 
 .three-col{
@@ -518,4 +516,67 @@ a.dfe-vertical-nav__link {
         line-height: 45px;
         padding-top: 15px;
     }
+}
+
+
+//image blocks
+
+@media (min-width: 48em) {
+    .image-blocks {
+        display: flex;
+        gap: 1.125rem;
+    }
+}
+
+.image-blocks {
+    width: 100%;
+
+    img{
+      max-width: 100%;
+    }
+
+    .heading--overlap, .colored-stripe h2, .quote-with-image__title{
+        margin: 0;
+        transform: translateY(-50%);
+    }
+
+    .heading--highlight-yellow, ol.photo-quote-list .item.yellow h3 {
+        margin: 0 1rem;
+        color: #1d1d1b;
+    }
+    .image-block h2 {
+        margin-left: 3rem;
+    }
+
+  .heading--highlight-yellow span, ol.photo-quote-list .item.yellow h3 span {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: .18em 0;
+    background: #f9b400;
+    box-shadow: 1rem 0 0 #f9b400, -1rem 0 0 #f9b400;
+  }
+
+  .heading--highlight-pink span, ol.quote-list .heading-wrapper h3 span, ol.photo-quote-list .item.purple h3 span, ol.photo-quote-list .item.pink h3 span {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: .18em 0;
+    background: #f162a0;
+    box-shadow: 1rem 0 0 #f162a0, -1rem 0 0 #f162a0;
+  }
+
+  .heading--highlight-green span, ol.photo-quote-list .item.green h3 span {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: .18em 0;
+    background: #00ab92;
+    box-shadow: 1rem 0 0 #00ab92, -1rem 0 0 #00ab92;
+  }
+
+  .image-block ul {
+    padding-left: 3rem;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
 }
