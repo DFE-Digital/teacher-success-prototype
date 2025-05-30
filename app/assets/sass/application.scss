@@ -853,3 +853,9 @@ ul.steps{
     line-height: 1.15;
   }
 }
+
+.dfe-grid-container{
+  &.four{
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+}
