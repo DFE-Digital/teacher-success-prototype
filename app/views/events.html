@@ -1,0 +1,257 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Events" %}
+
+{% block content %}
+
+
+  <div class="govuk-width-container">
+
+      <div class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <h1 class="govuk-heading-l">Events</h1>
+                
+
+                <div class="moj-filter-layout">
+
+                    <div class="moj-filter-layout__filter">
+
+                        <div class="moj-filter" data-module="moj-filter">
+
+                        <div class="moj-filter__header">
+
+                            <div class="moj-filter__header-title">
+                            <h2 class="govuk-heading-m">Filter</h2>
+                            </div>
+
+                            <div class="moj-filter__header-action">
+
+                            </div>
+
+                        </div>
+
+                        <div class="moj-filter__content">
+
+                            <div class="moj-filter__selected">
+
+                            <div class="moj-filter__selected-heading">
+
+                                <div class="moj-filter__heading-title">
+                                <h2 class="govuk-heading-m">Selected filters</h2>
+                                </div>
+
+                                <div class="moj-filter__heading-action">
+                                <p><a class="govuk-link govuk-link--no-visited-state" href="">Clear filters</a></p>
+                                </div>
+
+                            </div>
+
+                            <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Type of event</h3>
+
+                            <ul class="moj-filter-tags">
+
+                                <li><a class="moj-filter__tag" href="#"><span class="govuk-visually-hidden">Remove this filter</span> Online</a></li>
+
+                            </ul>
+
+                            </div>
+
+                            <div class="moj-filter__options">
+
+                            <button type="submit" class="govuk-button" data-module="govuk-button">
+                                Apply filters
+                            </button>
+
+                            <div class="govuk-form-group">
+                                <label class="govuk-label govuk-label--m" for="keywords">
+                                Postcode
+                                </label>
+
+                                <input class="govuk-input" id="keywords" name="keywords" type="text">
+
+                            </div>
+
+                            <div class="govuk-form-group">
+
+                                <fieldset class="govuk-fieldset">
+
+                                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+                                    Type of event
+
+                                </legend>
+
+                                <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+
+                                    <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="1" checked>
+                                    <label class="govuk-label govuk-checkboxes__label" for="type">
+                                        Online (18)
+                                    </label>
+
+                                    </div>
+
+                                    <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="type-2" name="type" type="checkbox" value="2">
+                                    <label class="govuk-label govuk-checkboxes__label" for="type-2">
+                                        In person (5)
+                                    </label>
+
+                                    </div>
+
+                                   
+
+                                </div>
+
+                                </fieldset>
+
+                            </div>
+
+                            </div>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="moj-filter-layout__content">
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="sort">
+                                Sort by
+                            </label>
+                            <select class="govuk-select" id="sort" name="sort">
+                                <option value="published" selected>Date soonest</option>
+                                <option value="updated">Postcode</option>
+                            </select>
+                        </div>
+
+
+                        <div class="moj-scrollable-pane">
+
+                            <article>
+                                <div class="govuk-grid-row">
+                
+                                    <div class="govuk-grid-column-two-thirds">
+
+                                        <h2 class="govuk-heading-m govuk-!-margin-bottom-1">
+                                            <a class="govuk-link" data-controller="tracked-link"  href="#">
+                                                Recruitment for ECT roles event
+                                            </a>
+                                        </h2>
+                                        
+                                        <dl class="govuk-summary-list govuk-summary-list--no-border govuk-!-margin-bottom-0">
+                                            <div class="govuk-summary-list__row">
+                                                <dt class="govuk-summary-list__key">
+                                                    Location
+                                                </dt>
+                                                <dd class="govuk-summary-list__value">
+                                                    Birmingham
+                                                </dd>
+                                            </div>
+                                            <div class="govuk-summary-list__row">
+                                                <dt class="govuk-summary-list__key">
+                                                    Date and time
+                                                </dt>
+                                                <dd class="govuk-summary-list__value">
+                                                    Friday 25th 2025, 17:00 to 20:00
+                                                </dd>
+                                            </div>
+                                            <div class="govuk-summary-list__row">
+                                                <dt class="govuk-summary-list__key">
+                                                    Type of event
+                                                </dt>
+                                                <dd class="govuk-summary-list__value">
+                                                    Online
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+
+                                    <div class="govuk-grid-column-one-third">
+                                        <img src="/public/images/teacher5.png" style="max-width: 100%;" alt="Sample Image">
+                                    </div>
+
+                                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+                                
+                                </div>
+                                <div class="govuk-grid-row">
+                                    <div class="govuk-grid-column-full">
+                                        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+                                    </div>
+                                </div>
+                            </article>  
+
+                            <article>
+                                <div class="govuk-grid-row">
+                
+                                    <div class="govuk-grid-column-two-thirds">
+
+                                        <h2 class="govuk-heading-m govuk-!-margin-bottom-1">
+                                            <a class="govuk-link" data-controller="tracked-link"  href="#">
+                                                Recruitment for ECT roles event
+                                            </a>
+                                        </h2>
+                                        
+                                        <dl class="govuk-summary-list govuk-summary-list--no-border govuk-!-margin-bottom-0">
+                                            <div class="govuk-summary-list__row">
+                                                <dt class="govuk-summary-list__key">
+                                                    Location
+                                                </dt>
+                                                <dd class="govuk-summary-list__value">
+                                                    Birmingham
+                                                </dd>
+                                            </div>
+                                            <div class="govuk-summary-list__row">
+                                                <dt class="govuk-summary-list__key">
+                                                    Date and time
+                                                </dt>
+                                                <dd class="govuk-summary-list__value">
+                                                    Friday 25th 2025, 17:00 to 20:00
+                                                </dd>
+                                            </div>
+                                            <div class="govuk-summary-list__row">
+                                                <dt class="govuk-summary-list__key">
+                                                    Type of event
+                                                </dt>
+                                                <dd class="govuk-summary-list__value">
+                                                    Online
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+
+                                    <div class="govuk-grid-column-one-third">
+                                        <img src="/public/images/teacher5.png" style="max-width: 100%;" alt="Sample Image">
+                                    </div>
+
+                                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+                                </div>
+                                <div class="govuk-grid-row">
+                                    <div class="govuk-grid-column-full">
+                                        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+                                    </div>
+                                </div>
+                            </article>  
+                                      
+
+
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+
+      </div>
+
+  </div>
+
+   
+
+
+{% endblock %}
