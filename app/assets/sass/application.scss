@@ -243,6 +243,11 @@ $govuk-suppressed-warnings: ("legacy-organisation-colours");
 .hf-cta-block {
   display: flex;
   column-gap: 20px;
+
+  &.grey{
+    padding:3rem;
+    background-color: #f3f2f1;
+  }
 }
 .hf-cta-block p {
   font-size: 1.1875em;
@@ -426,6 +431,10 @@ a.dfe-vertical-nav__link {
 .cta-banner-img {
   width: 40%;
   display: flex;
+
+  img{
+    max-width: 100%;
+  }
 }
 @media (max-width: 40.0525em) {
   .cta-banner-img {
@@ -599,7 +608,7 @@ a.dfe-vertical-nav__link {
     h2{
     color: #1d1d1b;
     display: inline-block;
-    padding: .6rem 1.5rem;
+    padding: .6rem 0.6rem;
     box-sizing: border-box;
     max-width: calc(100% - 1.25rem);
 
@@ -928,9 +937,17 @@ ul.steps{
     }
 }
 
+.hide-mobile{
+  display: none;
+}
+
+
 @media (min-width: 48em) {
     .hero>picture {
         grid-area: -6 / -7 / -1 / -1;
+    }
+    .hide-mobile{
+      display: block;
     }
 }
 
