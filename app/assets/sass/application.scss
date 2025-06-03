@@ -869,3 +869,122 @@ ul.steps{
 //filter
 
 
+
+
+
+//hero banner
+
+.hero {
+    overflow: hidden;
+    position: relative;
+    background-color:rgb(234.7, 241.9, 246.4);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr)) 4em repeat(4, minmax(100px, 1fr));
+    grid-template-rows: repeat(5, fit-content(0)) 3em;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+
+
+    picture {
+      height: 100%;
+      width: 100%;
+      min-height: 10em;
+      grid-area: -5/-10/-5/-2;
+
+        @media (min-width: 48em) {
+          min-height: 15em;
+            grid-area: -6 / -7 / -2 / -1;
+        }
+    
+
+      img{
+        max-width: 100%;
+      }
+    }
+
+    .hero__title{
+      z-index: 20;
+      grid-area: 2 / 1 / 4 / 6;
+      align-self: flex-end;
+      padding-top: 3em;
+    
+
+      @media (min-width: 48em) {
+        grid-area: 3 / 1 / 5 / 6;
+      }
+
+      h1{
+        margin-bottom: 0;
+        padding: .5em .7em;
+        background-color: #f9b400;
+        color: #1d1d1b;
+        display: inline-block;
+        padding: 0.6rem 5.5rem 0.6rem 3.5rem;
+        box-sizing: border-box;
+        max-width: calc(100% - 1.25rem);
+      }
+
+    }
+}
+
+@media (min-width: 48em) {
+    .hero>picture {
+        grid-area: -6 / -7 / -1 / -1;
+    }
+}
+
+//category nav cards
+
+.category__nav-cards{
+
+  ul{
+    padding: 0px;
+  }
+
+
+  .category__nav-card{
+    background: #f0f0f0;
+    display: flex;
+    margin-bottom: 0;
+    border-bottom: 4px solid #ccc;
+
+    &:hover{
+      border-color: #1d70b8;
+
+      h2{
+        text-decoration-thickness: max(4px, .25rem);
+      }
+    }
+
+    a{
+      padding: 1.25em;
+      text-decoration: none;
+      display: flex;
+      gap: 1.5em;
+      width: 100%;
+      color: #1d1d1b;
+
+      &:focus{
+        color: #fff;
+        background-color: #1d1d1b;
+        box-shadow: 0 4px #f162a0;
+        outline: 4px solid rgba(0, 0, 0, 0);
+
+        h2{
+          color:white;
+        }
+      }
+
+      .category__nav-card--content{
+        flex: 1 0 80%;
+
+        h2 {
+            text-decoration: underline;
+        }
+      }
+    }
+    
+  }
+
+}
