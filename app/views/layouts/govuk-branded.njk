@@ -111,30 +111,26 @@
   
 {% endblock %}
 
-{% if (GOVUKPrototypeKit.isDevelopment) %}
-  {% set footerItems = [
+{% set footerItems = [
     {
-      href: "#",
-      text: "Feedback"
-    }, {
-      href: "#",
-      text: "Privacy Policy"
-    }, {
-      href: "#",
-      text: "Accessibility statement"
-    }, {
-      href: "#",
+      href: "/footer/cookies",
       text: "Cookies"
+    },{
+      href: "https://www.gov.uk/government/publications/privacy-information-education-providers-workforce-including-teachers/privacy-information-education-providers-workforce-including-teachers",
+      text: "Privacy Policy",
+      attributes: {
+        lang: "cy",
+        hreflang: "cy",
+        target: "_blank"
+      }
+    },{
+      href: "/footer/terms",
+      text: "Terms and conditions"
+    },{
+      href: "/footer/accessibility",
+      text: "Accessibility"
     }
-  ] %}
-{% else %}
-  {% set footerItems = [
-    {
-      href: "/manage-prototype/clear-data",
-      text: "Clear data"
-    }
-  ] %}
-{% endif %}
+] %}
 
 {% block footer %}
   {{ govukFooter({
