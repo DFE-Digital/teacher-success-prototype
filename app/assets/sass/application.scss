@@ -543,8 +543,9 @@ a.dfe-vertical-nav__link {
 
 @media (min-width: 48em) {
     .image-blocks {
-        display: flex;
-        gap: 1.125rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
     }
 }
 
@@ -1010,17 +1011,29 @@ ul.steps{
 
 //homepage blocks grey homepage-feature blocks col-space-m-top
 
+@media (min-width: 48em) {
+
+  .call-to-action--homepage {
+      grid-template-columns: .8fr 1.2fr;
+  }
+
+}
+
 .blocks.homepage-feature {
-  margin: 1em 15px 0;
-  display: flex;
+  margin: 0px 0px 0;
+  display: inline;
   gap: 1em;
+  padding: 0px;
+
+  @media (min-width: 48em) {
+    display: flex;
+  }
 
   .call-to-action--homepage {
     display: grid;
     margin-bottom: 0;
     grid-gap: .1em;
     gap: .1em;
-    grid-template-rows: 1em .7fr 2fr .8fr 1em;
     grid-template-columns: 1.2fr .8fr;
     overflow: visible;
     background-color: #f0f0f0;
