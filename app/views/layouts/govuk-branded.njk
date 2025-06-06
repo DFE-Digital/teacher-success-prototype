@@ -79,7 +79,7 @@
   <div class="govuk-width-container">
     <div class="govuk-service-navigation__container">
       <span class="govuk-service-navigation__service-name">
-        <a href="/dfe" class="govuk-service-navigation__link">
+        <a href="/home" class="govuk-service-navigation__link">
           Get ready to teach
         </a>
       </span>
@@ -126,10 +126,22 @@
     },{
       href: "/footer/terms",
       text: "Terms and conditions"
-    },{
+    },
+    {
       href: "/footer/accessibility",
       text: "Accessibility"
+    },{
+      href: "#",
+      text: data['testname'] 
+    },
+    {
+      href: "/form?utm_name=alex&utm_test=atest",
+      text: "go to A test"
+    },{
+      href: "/form?utm_name=alex&utm_test=btest",
+      text: "go to B test"
     }
+
 ] %}
 
 {% block footer %}

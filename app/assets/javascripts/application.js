@@ -10,14 +10,21 @@ function getUTMParameters() {
   const params = new URLSearchParams(window.location.search);
   return {
     utm_name: params.get('utm_name'),
+    utm_test: params.get('utm_test'), // <-- fixed key name
   };
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
   const utms = getUTMParameters();
 
   if (utms.utm_name) {
-    document.getElementById("name").textContent = `${utms.utm_name}`;
+  //  document.getElementById("name").textContent = `${utms.utm_name}`;
+  }
+
+  if (utms.utm_test) {
+    document.getElementById("testname").value = `${utms.utm_test}`;
+    document.getElementById('submit').submit();
   }
  
 });

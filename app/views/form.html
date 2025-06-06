@@ -1,0 +1,15 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+
+ <form id="submit" action="/home.html" method="get" style="display:none;">
+  <input type="text" id="testname" name="testname">
+  <input type="submit" value="Submit">
+</form>
+   
+
+
+{% endblock %}
