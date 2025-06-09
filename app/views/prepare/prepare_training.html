@@ -31,119 +31,215 @@
    <div class="govuk-width-container">
         <div class="govuk-grid-row">
 
-
-            <div class="govuk-grid-column-one-quarter hide-mobile">
-                <nav class="dfe-vertical-nav govuk-!-margin-top-2">
-                    <h2 class="dfe-vertical-nav--section-header">Prepare for training</h2>
-                    <ul class="dfe-vertical-nav__section">
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="prepare_placement">Prepare for your first school placement</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="#">Prepare for training</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="#">What to expect from your mentor</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="#">What to expect from your provider</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="#">Hear from former trainees</a>
-                    </li>
-                </ul>
-                </nav>
-            </div>
+            {% include "prepare/sidebar.html" %}
 
             <div class="govuk-grid-column-three-quarters a">
 
-                <h2 class="govuk-heading-l" id="before-you-start">This is a title in a h2</h2>
-
-                <p class="govuk-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus metus, ullamcorper quis tempus eu, consectetur at mauris. Quisque placerat sem ut arcu euismod ullamcorper. Phasellus sed neque bibendum, <a class="govuk-link" href="#">stakeholder map</a>  dui id, faucibus nisi. Duis commodo tempor mi rhoncus tristique. Duis sagittis efficitur magna. Mauris mollis blandit arcu, et blandit urna faucibus et. Proin vel accumsan risus. Cras libero arcu, suscipit vitae faucibus vitae, rutrum eget velit. Duis eget tortor non elit aliquet accumsan ac at magna. Nullam sit amet ex nunc. Nam a velit nec turpis tempus placerat. Nunc semper ipsum nec tempor scelerisque.
-                </p>
-                <ul class="govuk-list govuk-list--bullet">
-                <li><a class="govuk-link" href="#">link</a></li>
-                <li><a class="govuk-link" href="#">link</a></li>
-                </ul>
-
-                <p class="govuk-body">Bullets:  </p>
-                <ul class="govuk-list govuk-list--bullet">
-                    <li>bullet</li>
-                    <li>bullet</li>
-                    <li>bullet</li>
-                </ul>
-                <p class="govuk-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus metus, ullamcorper quis tempus eu, consectetur at mauris. Quisque placerat sem ut arcu euismod ullamcorper. Phasellus sed neque bibendum, <a class="govuk-link" href="#">stakeholder map</a>  dui id, faucibus nisi. Duis commodo tempor mi rhoncus tristique. Duis sagittis efficitur magna. Mauris mollis blandit arcu, et blandit urna faucibus et. Proin vel accumsan risus. Cras libero arcu, suscipit vitae faucibus vitae, rutrum eget velit. Duis eget tortor non elit aliquet accumsan ac at magna. Nullam sit amet ex nunc. Nam a velit nec turpis tempus placerat. Nunc semper ipsum nec tempor scelerisque.
-                </p>   
-                <!--
-                <div class="light-grey-box govuk-!-margin-top-8 govuk-!-margin-bottom-4">
-                    <h2 id="ready-to-get-started" class="govuk-heading-m">Ready to get started?</h2>
-                    <p class="govuk-body-m">Enrol on this course and begin your first module.
-                        You will need to sign in or create an account before starting a module.
+                <h2 class="govuk-heading-l" id="before-you-start">Before you start your training, you could consider the following to help you prepare. </h2>
+                    
+                    
+                <h3 class="heading-m" style="padding-left:0px;">1. Get classroom experience</h3>
+                <div class="step__content">
+                    <p>Getting classroom experience can be a good way to help you feel more familiar with the school environment before you start your placement and many providers recommend it. </p>
+                    <p>You could arrange a few days in person with a school near you or <a href="https://teach-quest.com/about" class="govuk-link govuk-link--no-visited-state" target="_blank">explore life in the classroom virtually</a>.</p>
+                    <p>You do not have to have classroom experience before you start training, but it could help you feel better prepared. </p>
+                    <p>
+                        <a href="#" class="govuk-button" data-module="govuk-button" style="text-decoration: none;">
+                            Get school experience
+                        </a>
                     </p>
-                    <div class="govuk-button-group"><a class="govuk-link" href="/users/sign-in">Create an account or sign in</a></div>
                 </div>
+                  
+                <h3 class="heading-m" style="padding-left:0px;">2. Find out about funding </h3>
+
+                <div class="step__content">
+                    <p>There are lots of different ways to fund your teacher training.</p>
+                    <p>Depending on the subject you’re training to teach, you could be eligible for a scholarship or bursary.</p>
+                    <p>You may also be entitled to extra support if you: </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>are a parent or carer </li>
+                        <li>have a learning difficulty, health condition or disability </li>
+                        <li>are a veteran </li>
+                    </ul>
+                    <p>
+                        <a href="https://getintoteaching.education.gov.uk/funding-and-support" class="govuk-button" data-module="govuk-button" style="text-decoration: none;">
+                                Find out how to fund your training 
+                        </a>
+                    </p>
+                </div>
+
+                  
+                <h3 class="heading-m" style="padding-left:0px;">3. Talk to your provider about any reasonable adjustments </h3>
+                <div class="step__content">
+                    <p>Teacher training providers can make adjustments if you need support to become a teacher. This includes support for: </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>neurodiversity </li>
+                        <li>long term physical health conditions </li>
+                        <li>mental health conditions </li>
+                        <li>accessibility needs </li>
+                    </ul>
+                    <p>It’s best to talk to your provider about this as soon as possible to make sure you have all the support in place you need.</p>                          
+                    <p>
+                        <a href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/accessibility-adjustments" class="govuk-button" data-module="govuk-button" style="text-decoration: none;">
+                            Explore adjustments to help you train to teach  
+                        </a>
+                    </p>
+                </div>
+
+                    
+                <h3 class="heading-m" style="padding-left:0px;">4. Talk to your training provider </h3>
+                <div class="step__content">
+                    <p>Your training provider may have already been in touch and started your induction but do not worry if not – many providers will wait until September to reach out.</p>
+                    <p>You might want to think about any questions you have about your training to ask during your induction. For example, key milestones and assessments throughout the year and what support might be available. </p>                          
+                    <p>
+                        <a href="#" class="govuk-button" data-module="govuk-button" style="text-decoration: none;">
+                                What to ask your teacher training provider 
+                        </a>
+                    </p>
+                </div>
+
+                    
+                <h3 class="heading-m" style="padding-left:0px;">5. Read advice from past trainees</h3>
+                        
+                <div class="step__content">
+                    <p>#</p>
+                </div>
+
+            </div>
+
+            <div class="govuk-grid-column-three-quarters markdown b">
+
+                <h2 class="govuk-heading-l yellow b" id="before-you-start">Before you start your training, you could consider the following to help you prepare. </h2>
+
+                <ul class="steps">
+                    
+                    <li class="step" id="step-1">
+                        <header class="step__header">
+                            <div class="step__number">
+                                <picture>
+                                    <img src="/public/images/tick.svg" alt="" aria-hidden="true" width="64" height="64">
+                                </picture>
+                            </div>
+                            <h2 class="heading-m" style="padding-left:0px;">1. Get classroom experience</h2>
+                        </header>
+                        <div class="step__content">
+                            <p>Getting classroom experience can be a good way to help you feel more familiar with the school environment before you start your placement and many providers recommend it. </p>
+                            <p>You could arrange a few days in person with a school near you or <a href="https://teach-quest.com/about" class="govuk-link govuk-link--no-visited-state" target="_blank">explore life in the classroom virtually</a>.</p>
+                            <p>You do not have to have classroom experience before you start training, but it could help you feel better prepared. </p>
+                            <p>
+                                <a href="#" class="govuk-button" data-module="govuk-button" style="text-decoration: none;">
+                                    Get school experience
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="step" id="step-2">
+                        <header class="step__header">
+                            <div class="step__number">
+                                <picture>
+                                    <img src="/public/images/tick.svg" alt="" aria-hidden="true" width="64" height="64">
+                                </picture>
+                            </div>
+                            <h2 class="heading-m" style="padding-left:0px;">2. Find out about funding </h2>
+                        </header>
+                        <div class="step__content">
+                            <p>There are lots of different ways to fund your teacher training.</p>
+                            <p>Depending on the subject you’re training to teach, you could be eligible for a scholarship or bursary.</p>
+                            <p>You may also be entitled to extra support if you: </p>
+                            <ul class="govuk-list govuk-list--bullet">
+                                <li>are a parent or carer </li>
+                                <li>have a learning difficulty, health condition or disability </li>
+                                <li>are a veteran </li>
+                            </ul>
+                            <p>
+                                <a href="https://getintoteaching.education.gov.uk/funding-and-support" class="govuk-button" data-module="govuk-button" style="text-decoration: none;">
+                                     Find out how to fund your training 
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="step" id="step-3">
+                        <header class="step__header">
+                            <div class="step__number">
+                                <picture>
+                                    <img src="/public/images/tick.svg" alt="" aria-hidden="true" width="64" height="64">
+                                </picture>
+                            </div>
+                            <h2 class="heading-m" style="padding-left:0px;">3. Talk to your provider about any reasonable adjustments </h2>
+                        </header>
+                        <div class="step__content">
+                            <p>Teacher training providers can make adjustments if you need support to become a teacher. This includes support for: </p>
+                            <ul class="govuk-list govuk-list--bullet">
+                                <li>neurodiversity </li>
+                                <li>long term physical health conditions </li>
+                                <li>mental health conditions </li>
+                                <li>accessibility needs </li>
+                            </ul>
+                            <p>It’s best to talk to your provider about this as soon as possible to make sure you have all the support in place you need.</p>                          
+                            <p>
+                                <a href="https://getintoteaching.education.gov.uk/train-to-be-a-teacher/accessibility-adjustments" class="govuk-button" data-module="govuk-button" style="text-decoration: none;">
+                                    Explore adjustments to help you train to teach  
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="step" id="step-4">
+                        <header class="step__header">
+                            <div class="step__number">
+                                <picture>
+                                    <img src="/public/images/tick.svg" alt="" aria-hidden="true" width="64" height="64">
+                                </picture>
+                            </div>
+                            <h2 class="heading-m" style="padding-left:0px;">4. Talk to your training provider </h2>
+                        </header>
+                        <div class="step__content">
+                            <p>Your training provider may have already been in touch and started your induction but do not worry if not – many providers will wait until September to reach out.</p>
+                            <p>You might want to think about any questions you have about your training to ask during your induction. For example, key milestones and assessments throughout the year and what support might be available. </p>                          
+                            <p>
+                                <a href="#" class="govuk-button" data-module="govuk-button" style="text-decoration: none;">
+                                     What to ask your teacher training provider 
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="step" id="step-5">
+                        <header class="step__header">
+                            <div class="step__number">
+                                <picture>
+                                    <img src="/public/images/tick.svg" alt="" aria-hidden="true" width="64" height="64">
+                                </picture>
+                            </div>
+                            <h2 class="heading-m" style="padding-left:0px;">5. Read advice from past trainees</h2>
+                        </header>
+                        <div class="step__content">
+                            <p>#</p>
+                        </div>
+                    </li>
+
+                    
+                </ul>
+
+                <!--
+                <section class="inset-text yellow b">
+                    <p>From autumn 2025, the maximum fees that providers can charge for postgraduate teacher training courses have increased. The increased amounts are shown on this page. If you've already applied for a course, speak with your provider to check if they'll be increasing their fees.</p>
+                </section>
                 -->
                 
             </div>
             
-            <div class="govuk-grid-column-three-quarters markdown b">
-
-                <h2 class="govuk-heading-l yellow" id="before-you-start">This is a title in a h2</h2>
-
-                <p class="govuk-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus metus, ullamcorper quis tempus eu, consectetur at mauris. Quisque placerat sem ut arcu euismod ullamcorper. Phasellus sed neque bibendum, <a class="govuk-link" href="#">stakeholder map</a>  dui id, faucibus nisi. Duis commodo tempor mi rhoncus tristique. Duis sagittis efficitur magna. Mauris mollis blandit arcu, et blandit urna faucibus et. Proin vel accumsan risus. Cras libero arcu, suscipit vitae faucibus vitae, rutrum eget velit. Duis eget tortor non elit aliquet accumsan ac at magna. Nullam sit amet ex nunc. Nam a velit nec turpis tempus placerat. Nunc semper ipsum nec tempor scelerisque.
-                </p>
-                <ul class="govuk-list govuk-list--bullet">
-                    <li><a class="govuk-link" href="#">link</a></li>
-                    <li><a class="govuk-link" href="#">link</a></li>
-                </ul>
-
-                <section class="inset-text yellow">
-                    <p>From autumn 2025, the maximum fees that providers can charge for postgraduate teacher training courses have increased. The increased amounts are shown on this page. If you've already applied for a course, speak with your provider to check if they'll be increasing their fees.</p>
-                </section>
-
-                <h2 class="govuk-heading-l yellow" id="before-you-start">This is a title in a h2</h2>
-
-                <p class="govuk-body">Bullets:  </p>
-                <ul class="govuk-list govuk-list--bullet">
-                    <li>bullet</li>
-                    <li>bullet</li>
-                    <li>bullet</li>
-                </ul>
-                <p class="govuk-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus metus, ullamcorper quis tempus eu, consectetur at mauris. Quisque placerat sem ut arcu euismod ullamcorper. Phasellus sed neque bibendum, <a class="govuk-link" href="#">stakeholder map</a>  dui id, faucibus nisi. Duis commodo tempor mi rhoncus tristique. Duis sagittis efficitur magna. Mauris mollis blandit arcu, et blandit urna faucibus et. Proin vel accumsan risus. Cras libero arcu, suscipit vitae faucibus vitae, rutrum eget velit. Duis eget tortor non elit aliquet accumsan ac at magna. Nullam sit amet ex nunc. Nam a velit nec turpis tempus placerat. Nunc semper ipsum nec tempor scelerisque.
-                </p>   
-                <!--
-                <div class="light-grey-box govuk-!-margin-top-8 govuk-!-margin-bottom-4">
-                    <h2 id="ready-to-get-started" class="govuk-heading-m">Ready to get started?</h2>
-                    <p class="govuk-body-m">Enrol on this course and begin your first module.
-                        You will need to sign in or create an account before starting a module.
-                    </p>
-                    <div class="govuk-button-group"><a class="govuk-link" href="/users/sign-in">Create an account or sign in</a></div>
-                </div>
-                -->
-                
-            </div>
-
+           
         </div>
         
       
    </div>
 </section>
 
+{% include "feedbackcta.html" %}
 
-<div id="feedback-cta">
-   <div class="dfe-width-container">
-      <div class="govuk-grid-row">
-         <div class="govuk-grid-column-full">
-            <p class="govuk-body-m">Give feedback to help us improve this website.</p>
-            <a class="govuk-link govuk-button govuk-button--inverse" data-module="govuk-button" href="prepare_content_minimal">Give Feedback</a>
-         </div>
-      </div>
-   </div>
-</div>
 
 
 {% endblock %}
