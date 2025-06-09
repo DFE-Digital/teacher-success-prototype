@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName="prepare" %}
+{% set pageName="Prepare for your first school placement" %}
 
 {% block content %}
 
@@ -10,7 +10,7 @@
             <ol class="govuk-breadcrumbs__list">
                 <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/home">Get ready to teach</a></li>
                 <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/prepare/prepare">Prepare for training</a></li>
-                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Trainee starter checklist</a></li>
+                <li class="govuk-breadcrumbs__list-item">Prepare for your first school placement</li>
             </ol>
         </div>
     </div>
@@ -21,7 +21,7 @@
         <div class="govuk-grid-row govuk-!-padding-top-1">
             <div class="govuk-grid-column-three-quarters">
                 <h1 class="govuk-heading-xl govuk-!-padding-top-1">Prepare for your first school placement</h1>
-                <p class="govuk-body-l">Find out how you can prepare for your first school placement, including questions you might want to ask your provider or school.</p>
+                <p class="govuk-body-l">Find out how you can prepare for your first school placement as part of your teacher training, including questions you might want to ask. </p>
             </div>
         </div>
     </div>
@@ -31,35 +31,19 @@
    <div class="govuk-width-container">
         <div class="govuk-grid-row">
 
-            <div class="govuk-grid-column-one-quarter hide-mobile">
-                <nav class="dfe-vertical-nav govuk-!-margin-top-2">
-                    <h2 class="dfe-vertical-nav--section-header">Prepare for training</h2>
-                    <ul class="dfe-vertical-nav__section">
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="prepare_placement">Prepare for your first school placement</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="#">Prepare for training</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="#">What to expect from your mentor</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="#">What to expect from your provider</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="#">Hear from former trainees</a>
-                    </li>
-                </ul>
-                </nav>
-            </div>
+            {% include "prepare/sidebar.html" %}
 
-            <div class="govuk-grid-column-three-quarters a">
+            <div class="govuk-grid-column-three-quarters markdown ">
 
-                <h2 class="govuk-heading-l" id="before-you-start">This is a title in a h2</h2>
+                <h2 class="govuk-heading-l a" id="before-you-start" style="padding:0px; width:100%;">This is a title in a h2</h2>
+
+                <h2 class="govuk-heading-l yellow " id="before-you-start">This is a title in a h2</h2>
 
                 <p class="govuk-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus metus, ullamcorper quis tempus eu, consectetur at mauris. Quisque placerat sem ut arcu euismod ullamcorper. Phasellus sed neque bibendum, <a class="govuk-link" href="#">stakeholder map</a>  dui id, faucibus nisi. Duis commodo tempor mi rhoncus tristique. Duis sagittis efficitur magna. Mauris mollis blandit arcu, et blandit urna faucibus et. Proin vel accumsan risus. Cras libero arcu, suscipit vitae faucibus vitae, rutrum eget velit. Duis eget tortor non elit aliquet accumsan ac at magna. Nullam sit amet ex nunc. Nam a velit nec turpis tempus placerat. Nunc semper ipsum nec tempor scelerisque.
+                    Your first school placement will be your chance to understand what teaching in a school is really like. 
+                </p>
+                <p class="govuk-body">
+                    The school should provide you with all the information you need during your induction or onboarding, but it might be worth considering what would be useful to ask and things to be aware of. 
                 </p>
                 <ul class="govuk-list govuk-list--bullet">
                 <li><a class="govuk-link" href="#">link</a></li>
