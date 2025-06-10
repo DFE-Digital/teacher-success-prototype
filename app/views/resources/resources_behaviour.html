@@ -1,0 +1,108 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Behaviour management 
+" %}
+
+{% block content %}
+
+<div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile">
+            <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/home">Get ready to teach</a></li>
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/resources/resources">Resources while training</a></li>
+                <li class="govuk-breadcrumbs__list-item">Behaviour management </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-grid-row govuk-!-padding-top-1">
+            <div class="govuk-grid-column-three-quarters">
+                <h1 class="govuk-heading-xl govuk-!-padding-top-1">Behaviour management </h1>
+                <p class="govuk-body-l">Find out what you need to know about behaviour management as part of your teacher training along with links to resources and tips for new teachers</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+   <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+
+            {% include "resources/sidebar.html" %}
+
+            <div class="govuk-grid-column-three-quarters markdown ">
+
+                <p class="govuk-body">
+                    Learning how to manage behaviour in a classroom will be a key part of your teacher training. 
+                <p class="govuk-body">
+                    But don’t worry – your provider and placement schools will work together to teach you different techniques and practices and will be there to provide support and advice for any challenges you face. 
+                </p>
+
+                <h2 class="govuk-heading-l a" id="before-you-start" style="padding:0px; width:100%;">Things to consider</h2>
+
+                <h2 class="govuk-heading-l yellow b" id="before-you-start">Things to consider</h2>
+
+                <p class="govuk-body">
+                    Each school will have its own behaviour management policy so it’s important to check what your school has in place. 
+                </p>
+                <p class="govuk-body">
+                    When you start your placement, you might want to consider if you know: 
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>what your school’s behaviour management policy is </li>
+                    <li>how to record and share good behaviour and achievements </li>
+                    <li>how to report a behaviour incident and implement any sanctions for challenging behaviour – will you need access to any systems to do this? </li>
+                    <li>if there are any children in your class with SEND or a behaviour support plan and how you will be expected to support them </li>
+                </ul>
+                
+                <h2 class="govuk-heading-l a" id="before-you-start" style="padding:0px; width:100%;">Behaviour management resources </h2>
+
+                <h2 class="govuk-heading-l yellow b" id="before-you-start">Behaviour management resources </h2>
+                
+                <p class="govuk-body">
+                    The important thing to remember is that no technique is universal. Different things will work in different situations. 
+                </p>
+                <p class="govuk-body">
+                   If you find that what you’re implementing is not effective, talk to your mentor and tutor about other alternatives.  
+                </p>
+                <p class="govuk-body">
+                   You can <a target="_blank" href="https://www.gov.uk/government/publications/initial-teacher-training-itt-core-content-framework/the-trainee-teacher-behavioural-toolkit-a-summary">read Department for Education’s trainee teacher behavioural toolkit (link opens in new tab)</a>.  
+                </p>
+                
+                <div class="a">
+                    <p>You could also: </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>read <a target="_blank" href="https://neu.org.uk/advice/member-groups/new-teachers/behaviour-tips-trainee-teachers">behaviour tips for teacher trainees from the National Education Union (link opens in new tab)</a></li>
+                        <li>watch <a target="_blank" href="https://www.nasuwt.org.uk/advice/student-hub/top-behaviour-management-tips-from-nqts.html">top behaviour management tips for new teachers from NASUWT (link opens in new tab)</a></li>
+                        <li>explore <a target="_blank" href="https://my.chartered.college/ecf_framework/ecf-standard-7-managing-behaviour/">The Chartered College of Teaching’s managing behaviour resources (link opens in new tab)</a></li>
+                    </ul>
+                </div>
+
+                <section class="inset-text yellow b">
+                    <p>You could also: </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>read <a target="_blank" href="https://neu.org.uk/advice/member-groups/new-teachers/behaviour-tips-trainee-teachers">behaviour tips for teacher trainees from the National Education Union (link opens in new tab)</a></li>
+                        <li>watch <a target="_blank" href="https://www.nasuwt.org.uk/advice/student-hub/top-behaviour-management-tips-from-nqts.html">top behaviour management tips for new teachers from NASUWT (link opens in new tab)</a></li>
+                        <li>explore <a target="_blank" href="https://my.chartered.college/ecf_framework/ecf-standard-7-managing-behaviour/">The Chartered College of Teaching’s managing behaviour resources (link opens in new tab)</a></li>
+                    </ul>
+                </section>
+
+                
+            </div>
+           
+            
+        </div>
+        
+      
+   </div>
+</section>
+
+
+{% include "feedbackcta.html" %}
+
+
+{% endblock %}
