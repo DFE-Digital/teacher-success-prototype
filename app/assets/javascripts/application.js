@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const utms = getUTMParameters();
 
   if (utms.utm_name) {
-  //  document.getElementById("name").textContent = `${utms.utm_name}`;
+    document.getElementById("name").textContent = `${utms.utm_name}`;
+    document.getElementById("testname").textContent = `${utms.utm_test}`;
   }
 
   if (utms.utm_test) {
