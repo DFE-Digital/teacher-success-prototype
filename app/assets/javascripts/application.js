@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (utms.utm_test) {
     document.getElementById("testname").value = `${utms.utm_test}`;
+    document.getElementById("name").value = `${utms.utm_name}`;
     document.getElementById('submit').submit();
   }
  
