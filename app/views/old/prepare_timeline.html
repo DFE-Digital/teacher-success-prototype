@@ -1,0 +1,229 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="prepare" %}
+
+{% block content %}
+
+<div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile">
+            <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/dfe">Get ready to teach</a></li>
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/prepare/prepare">Prepare for training</a></li>
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Trainee starter checklist</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-grid-row govuk-!-padding-top-1">
+            <div class="govuk-grid-column-three-quarters">
+                <h1 class="govuk-heading-xl govuk-!-padding-top-1">Timeline of your training year</h1>
+                <p class="govuk-body-l">What happens exactly and when will depend on your specific training provider. But you can expect the following to happen as part of your teacher training, regardless of your course.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+   <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-quarter hide-mobile">
+                <nav class="dfe-vertical-nav govuk-!-margin-top-2">
+                    <h2 class="dfe-vertical-nav--section-header">Prepare for training</h2>
+                    <ul class="dfe-vertical-nav__section">
+                    <li class="dfe-vertical-nav__section-item">
+                        <a class="dfe-vertical-nav__link" href="checklist">Trainee starter checklist</a>
+                    </li>
+                    <li class="dfe-vertical-nav__section-item">
+                        <a class="dfe-vertical-nav__link" href="prepare_content">Get school experience</a>
+                    </li>
+                    <li class="dfe-vertical-nav__section-item">
+                        <a class="dfe-vertical-nav__link" href="#">Advice from past trainees</a>
+                    </li>
+                    <li class="dfe-vertical-nav__section-item">
+                        <a class="dfe-vertical-nav__link" href="#">Trainee starter checklist</a>
+                    </li>
+                    <li class="dfe-vertical-nav__section-item dfe-vertical-nav__section-item--current">
+                        <a class="dfe-vertical-nav__link" href="#">Timeline of your training year</a>
+                    </li>
+                    <li class="dfe-vertical-nav__section-item">
+                        <a class="dfe-vertical-nav__link" href="#">Prepare for your first school placement</a>
+                    </li>
+                    <li class="dfe-vertical-nav__section-item">
+                        <a class="dfe-vertical-nav__link" href="#">Learn about PGCE expectations and best practice</a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+            <div class="govuk-grid-column-three-quarters">
+
+
+                <div class="govuk-tabs" data-module="govuk-tabs">
+                <h2 class="govuk-tabs__title">
+                    Contents
+                </h2>
+                <ul class="govuk-tabs__list">
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                    <a class="govuk-tabs__tab" href="#past-day">
+                        SCITT timeline
+                    </a>
+                    </li>
+                    <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#past-week">
+                        HEI timeline
+                    </a>
+                    </li>
+                </ul>
+                <div class="govuk-tabs__panel" id="past-day">
+                    <h2 class="govuk-heading-l" id="before-you-start">SCITT timeline</h2>
+                    <div class="dwp-timeline">
+                        <ol class="dwp-timeline__items">
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">July to Aug</p>
+                                <h3 class="dwp-timeline__heading">Induction during summer</h3>
+                                <p class="dwp-timeline__by-line">A lot of SCITTs will start the process of your induction before and during the summer holidays.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">July to Aug</p>
+                                <h3 class="dwp-timeline__heading">Receive plan of the year</h3>
+                                <p class="dwp-timeline__by-line">Your SCITT may also give you a detailed timetable that outlines each week in your training year and what to expect.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">Sept</p>
+                                <h3 class="dwp-timeline__heading">Start first placement school</h3>
+                                <p class="dwp-timeline__by-line">When you first start your placement, you'll mainly be observing. As you grow more confident, you'll start to take on more responsibilites.</p>
+                                <a href="#" class="dwp-timeline__link">View details<span class="govuk-visually-hidden"> of the event on 15 May 2024 at 4:01pm</span></a>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">Oct</p>
+                                <h3 class="dwp-timeline__heading">Formative assessments</h3>
+                                <p class="dwp-timeline__by-line">You may submit a formative assessment at this point in preparation for the real one in December.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">Dec</p>
+                                <h3 class="dwp-timeline__heading">End of first placement</h3>
+                                <p class="dwp-timeline__by-line">You’ll finish your first placement and submit your summative QTS assessment  (and PGCE assessment if you’re doing one). </p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">Jan</p>
+                                <h3 class="dwp-timeline__heading">Start 2nd placement</h3>
+                                <p class="dwp-timeline__by-line">You’ll begin your second placement at a different school and focus on different aspects of teaching. </p>
+                                <p class="dwp-timeline__by-line">Some trainees begin applying for their first role.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">Feb</p>
+                                <h3 class="dwp-timeline__heading">Formative assessments</h3>
+                                <p class="dwp-timeline__by-line">You may submit a formative assessment at this point in preparation for the real one in April.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">April</p>
+                                <h3 class="dwp-timeline__heading">Summative assessments </h3>
+                                <p class="dwp-timeline__by-line">You’ll submit your second summative assessment. </p>
+                                <p class="dwp-timeline__by-line">Some trainees may return to their first school while others will stay in their second placement school till the end of May.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">May</p>
+                                <h3 class="dwp-timeline__heading">End of placements</h3>
+                                <p class="dwp-timeline__by-line">You’ll finish your placement at the end of May and spend the next month preparing for your final assessments in June.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">June</p>
+                                <h3 class="dwp-timeline__heading">Final assessments</h3>
+                                <p class="dwp-timeline__by-line">After completing your final assessments you’ll hopefully gain QTS and begin looking for your new role as an ECT.</p>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                </div>
+                <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+                    <h2 class="govuk-heading-l" id="before-you-start">HEI timeline</h2>
+                    <div class="dwp-timeline">
+                        <ol class="dwp-timeline__items">
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">July to Aug</p>
+                                <h3 class="dwp-timeline__heading">Induction during summer</h3>
+                                <p class="dwp-timeline__by-line">A lot of SCITTs will start the process of your induction before and during the summer holidays.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">July to Aug</p>
+                                <h3 class="dwp-timeline__heading">Receive plan of the year</h3>
+                                <p class="dwp-timeline__by-line">Your SCITT may also give you a detailed timetable that outlines each week in your training year and what to expect.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">Sept</p>
+                                <h3 class="dwp-timeline__heading">Start first placement school</h3>
+                                <p class="dwp-timeline__by-line">When you first start your placement, you'll mainly be observing. As you grow more confident, you'll start to take on more responsibilites.</p>
+                                <a href="#" class="dwp-timeline__link">View details<span class="govuk-visually-hidden"> of the event on 15 May 2024 at 4:01pm</span></a>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">Oct</p>
+                                <h3 class="dwp-timeline__heading">Formative assessments</h3>
+                                <p class="dwp-timeline__by-line">You may submit a formative assessment at this point in preparation for the real one in December.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">Dec</p>
+                                <h3 class="dwp-timeline__heading">End of first placement</h3>
+                                <p class="dwp-timeline__by-line">You’ll finish your first placement and submit your summative QTS assessment  (and PGCE assessment if you’re doing one). </p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">Jan</p>
+                                <h3 class="dwp-timeline__heading">Start 2nd placement</h3>
+                                <p class="dwp-timeline__by-line">You’ll begin your second placement at a different school and focus on different aspects of teaching. </p>
+                                <p class="dwp-timeline__by-line">Some trainees begin applying for their first role.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">Feb</p>
+                                <h3 class="dwp-timeline__heading">Formative assessments</h3>
+                                <p class="dwp-timeline__by-line">You may submit a formative assessment at this point in preparation for the real one in April.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">April</p>
+                                <h3 class="dwp-timeline__heading">Summative assessments </h3>
+                                <p class="dwp-timeline__by-line">You’ll submit your second summative assessment. </p>
+                                <p class="dwp-timeline__by-line">Some trainees may return to their first school while others will stay in their second placement school till the end of May.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">May</p>
+                                <h3 class="dwp-timeline__heading">End of placements</h3>
+                                <p class="dwp-timeline__by-line">You’ll finish your placement at the end of May and spend the next month preparing for your final assessments in June.</p>
+                            </li>
+                            <li class="dwp-timeline__item">
+                                <p class="dwp-timeline__datetime">June</p>
+                                <h3 class="dwp-timeline__heading">Final assessments</h3>
+                                <p class="dwp-timeline__by-line">After completing your final assessments you’ll hopefully gain QTS and begin looking for your new role as an ECT.</p>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                </div>
+                
+                </div>
+
+                
+                
+
+            </div>
+
+        </div>
+        
+      
+   </div>
+</section>
+
+
+<div id="feedback-cta">
+   <div class="dfe-width-container">
+      <div class="govuk-grid-row">
+         <div class="govuk-grid-column-full">
+            <p class="govuk-body-m">Give feedback to help us improve this website.</p>
+            <a class="govuk-link govuk-button govuk-button--inverse" data-module="govuk-button" href="prepare_content">Give Feedback</a>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+{% endblock %}
