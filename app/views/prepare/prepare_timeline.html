@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName="prepare" %}
+{% set pageName="Timeline of initial teacher training (ITT)" %}
 
 {% block content %}
 
@@ -8,9 +8,9 @@
     <div class="dfe-width-container">
         <div class="govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile">
             <ol class="govuk-breadcrumbs__list">
-                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/dfe">Get ready to teach</a></li>
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/home">Get ready to teach</a></li>
                 <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/prepare/prepare">Prepare for training</a></li>
-                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Trainee starter checklist</a></li>
+                <li class="govuk-breadcrumbs__list-item">Timeline of initial teacher training (ITT)</li>
             </ol>
         </div>
     </div>
@@ -21,7 +21,7 @@
         <div class="govuk-grid-row govuk-!-padding-top-1">
             <div class="govuk-grid-column-three-quarters">
                 <h1 class="govuk-heading-xl govuk-!-padding-top-1">Timeline of your training year</h1>
-                <p class="govuk-body-l">What happens exactly and when will depend on your specific training provider. But you can expect the following to happen as part of your teacher training, regardless of your course.</p>
+                <p class="govuk-body-l">Find out what happens and when on initial teacher training (ITT) whether you’re training with a university or school centred initial teacher training (SCITT).  </p>
             </div>
         </div>
     </div>
@@ -30,30 +30,17 @@
 <section class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
    <div class="govuk-width-container">
         <div class="govuk-grid-row">
-            <div class="govuk-grid-column-one-quarter hide-mobile">
-                <nav class="dfe-vertical-nav govuk-!-margin-top-2">
-                    <h2 class="dfe-vertical-nav--section-header">Prepare for training</h2>
-                    <ul class="dfe-vertical-nav__section">
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="checklist">Trainee starter checklist</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="prepare_content">Get school experience</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="#">Advice from past trainees</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item dfe-vertical-nav__section-item--current">
-                        <a class="dfe-vertical-nav__link" href="#">Timeline of your training year</a>
-                    </li>
-                    <li class="dfe-vertical-nav__section-item">
-                        <a class="dfe-vertical-nav__link" href="#">Prepare for your first school placement</a>
-                    </li>
-                </ul>
-                </nav>
-            </div>
+
+            {% include "prepare/sidebar.html" %}
+
             <div class="govuk-grid-column-three-quarters">
 
+                <p class="govuk-body">
+                    What happens exactly on your teacher training course and when will depend on your specific training provider. 
+                </p>
+                <p class="govuk-body">
+                    But most training courses will include the following. 
+                </p>
 
                 <div class="govuk-tabs" data-module="govuk-tabs">
                 <h2 class="govuk-tabs__title">
@@ -76,57 +63,100 @@
                     <div class="dwp-timeline">
                         <ol class="dwp-timeline__items">
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">July to Aug</p>
-                                <h3 class="dwp-timeline__heading">Induction during summer</h3>
-                                <p class="dwp-timeline__by-line">A lot of SCITTs will start the process of your induction before and during the summer holidays.</p>
+                                <h3 class="dwp-timeline__heading">Before you start your course</h3>
+                                <p class="dwp-timeline__by-line">
+                                    Some SCITTs will start your induction or onboarding before you start your course. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    This might include inviting you to visit your placement school and giving you some reading or online tasks to do over the summer. 
+                                </p>
                             </li>
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">July to Aug</p>
-                                <h3 class="dwp-timeline__heading">Receive plan of the year</h3>
-                                <p class="dwp-timeline__by-line">Your SCITT may also give you a detailed timetable that outlines each week in your training year and what to expect.</p>
+                                <h3 class="dwp-timeline__heading">
+                                    When you start your course 
+                                </h3>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll start your first placement by observing other teachers. As you learn more about teaching and grow in confidence, you’ll start to take on more responsibilities. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    This could be leading small sections of lessons or leading some one to one learning. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll have weekly meetings with your school-based mentor to discuss your progress. 
+                                </p>
                             </li>
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">Sept</p>
-                                <h3 class="dwp-timeline__heading">Start first placement school</h3>
-                                <p class="dwp-timeline__by-line">When you first start your placement, you'll mainly be observing. As you grow more confident, you'll start to take on more responsibilites.</p>
-                                <a href="#" class="dwp-timeline__link">View details<span class="govuk-visually-hidden"> of the event on 15 May 2024 at 4:01pm</span></a>
+                                <h3 class="dwp-timeline__heading">
+                                    Autumn term (September to December) 
+                                </h3>
+                                <p class="dwp-timeline__by-line">
+                                    The amount you teach will slowly start to increase and you and your mentor will discuss when you’re confident enough to lead whole lessons.  
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll have a progress review to make sure you’re on track to meet the standards for qualified teacher status (QTS). 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You might also submit your first PGCE assessment, if you’re doing one. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You might want to start thinking about looking at <a target="_blank" href="https://teaching-vacancies.service.gov.uk/">teaching roles on Teaching Vacancies (link opens in new tab)</a> – your provider will likely help you with this. 
+                                </p>
                             </li>
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">Oct</p>
-                                <h3 class="dwp-timeline__heading">Formative assessments</h3>
-                                <p class="dwp-timeline__by-line">You may submit a formative assessment at this point in preparation for the real one in December.</p>
+                                <h3 class="dwp-timeline__heading">
+                                    Spring term (January to April) 
+                                </h3>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll likely start your second placement in the spring term and your time spent teaching whole lessons will increase. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    Different providers will have different placement structures, so you may spend more time in some placement schools than others. But each trainee needs 120 days placement in at least 2 schools to get qualified teacher status (QTS). 
+                                </p>
                             </li>
+
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">Dec</p>
-                                <h3 class="dwp-timeline__heading">End of first placement</h3>
-                                <p class="dwp-timeline__by-line">You’ll finish your first placement and submit your summative QTS assessment  (and PGCE assessment if you’re doing one). </p>
+                                <h3 class="dwp-timeline__heading">
+                                    Summer term (April to July) 
+                                </h3>
+                                <p class="dwp-timeline__by-line">
+                                    You may submit another PGCE assignment. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll be continuing to gather evidence to show you meet your provider’s training criteria (your provider will explain exactly how). 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    After your second placement, you might return to your first placement school, stay in your second, or possibly go to a third depending on the structure of the course at your specific provider. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    By the end of your training, you’ll need to have taught at least 80% of a full teacher’s timetable for at least 6 weeks. 
+                                </p>
                             </li>
+
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">Jan</p>
-                                <h3 class="dwp-timeline__heading">Start 2nd placement</h3>
-                                <p class="dwp-timeline__by-line">You’ll begin your second placement at a different school and focus on different aspects of teaching. </p>
-                                <p class="dwp-timeline__by-line">Some trainees begin applying for their first role.</p>
+                                <h3 class="dwp-timeline__heading">
+                                    End of the academic year 
+                                </h3>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll finish your placements near the end of the academic year and spend time preparing for your final assessments. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    Once you’ve passed your final assessments, you’ll be awarded qualified teacher status – congratulations! 
+                                </p>
                             </li>
+
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">Feb</p>
-                                <h3 class="dwp-timeline__heading">Formative assessments</h3>
-                                <p class="dwp-timeline__by-line">You may submit a formative assessment at this point in preparation for the real one in April.</p>
-                            </li>
-                            <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">April</p>
-                                <h3 class="dwp-timeline__heading">Summative assessments </h3>
-                                <p class="dwp-timeline__by-line">You’ll submit your second summative assessment. </p>
-                                <p class="dwp-timeline__by-line">Some trainees may return to their first school while others will stay in their second placement school till the end of May.</p>
-                            </li>
-                            <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">May</p>
-                                <h3 class="dwp-timeline__heading">End of placements</h3>
-                                <p class="dwp-timeline__by-line">You’ll finish your placement at the end of May and spend the next month preparing for your final assessments in June.</p>
-                            </li>
-                            <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">June</p>
-                                <h3 class="dwp-timeline__heading">Final assessments</h3>
-                                <p class="dwp-timeline__by-line">After completing your final assessments you’ll hopefully gain QTS and begin looking for your new role as an ECT.</p>
+                                <h3 class="dwp-timeline__heading">
+                                    September 
+                                </h3>
+                                <p class="dwp-timeline__by-line">
+                                    You’re now an early career teacher (ECT)! 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    For your first 2 years, you’ll receive a package of support. You'll get this automatically if you work in a maintained school but some academies and special schools provide this for ECTs, too. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    <a target="_blank" href="https://getintoteaching.education.gov.uk/life-as-a-teacher/teaching-as-a-career/early-career-teachers">Find out more about support for early career teachers</a>
+                                </p>
                             </li>
                             
                         </ol>
@@ -136,58 +166,124 @@
                     <h2 class="govuk-heading-l" id="before-you-start">HEI timeline</h2>
                     <div class="dwp-timeline">
                         <ol class="dwp-timeline__items">
+                            
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">July to Aug</p>
-                                <h3 class="dwp-timeline__heading">Induction during summer</h3>
-                                <p class="dwp-timeline__by-line">A lot of SCITTs will start the process of your induction before and during the summer holidays.</p>
+                                <h3 class="dwp-timeline__heading">Before you start your course</h3>
+                                <p class="dwp-timeline__by-line">
+                                    During the summer, your university will be working hard to match you with placement schools. Some universities might be open to or ask you to find your own placement school – talk to your provider to find out if this is something you’ll need to do. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    Your university might give you some reading or online tasks to do over the summer, too. 
+                                </p>
                             </li>
+
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">July to Aug</p>
-                                <h3 class="dwp-timeline__heading">Receive plan of the year</h3>
-                                <p class="dwp-timeline__by-line">Your SCITT may also give you a detailed timetable that outlines each week in your training year and what to expect.</p>
+                                <h3 class="dwp-timeline__heading">
+                                    When you start your course 
+                                </h3>
+                                <p class="dwp-timeline__by-line"><b>
+                                    At your university </b>
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll meet your tutors, other trainees and find out exactly what to expect as part of your course. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    The start of your course might focus on educational theory, professionalism and subject knowledge. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll have university days with seminars and workshops – this could be weekly or termly, depending on your course.  
+                                </p>
+
+                                <p class="dwp-timeline__by-line"><b>
+                                    Your first placement  </b>
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    In your first placement, you’ll start by mainly observing other teachers. As you grow more confident, you’ll start to take on more responsibilities. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    This could be leading small sections of lessons or leading some one to one learning. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll also have weekly meetings with your mentor at your placement school. 
+                                </p>
                             </li>
+
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">Sept</p>
-                                <h3 class="dwp-timeline__heading">Start first placement school</h3>
-                                <p class="dwp-timeline__by-line">When you first start your placement, you'll mainly be observing. As you grow more confident, you'll start to take on more responsibilites.</p>
-                                <a href="#" class="dwp-timeline__link">View details<span class="govuk-visually-hidden"> of the event on 15 May 2024 at 4:01pm</span></a>
+                                <h3 class="dwp-timeline__heading">
+                                    Autumn term (September to December) 
+                                </h3>
+                                <p class="dwp-timeline__by-line">
+                                    The amount you teach will slowly start to increase and you and your mentor will discuss when you’re confident enough to lead whole lessons. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll have a progress review to make sure you’re on track to meet the standards for qualified teacher status (QTS). 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You might also submit your first PGCE assessment, if you’re doing one. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You might want to start thinking about looking at <a target="_blank" href="https://teaching-vacancies.service.gov.uk/">teaching roles on Teaching Vacancies (link opens in new tab)</a> – your provider will likely help you with this. 
+                                </p>
                             </li>
+
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">Oct</p>
-                                <h3 class="dwp-timeline__heading">Formative assessments</h3>
-                                <p class="dwp-timeline__by-line">You may submit a formative assessment at this point in preparation for the real one in December.</p>
+                                <h3 class="dwp-timeline__heading">
+                                    Spring term (January to April) 
+                                </h3>
+                                <p class="dwp-timeline__by-line">
+                                    You might spend another block of time with your university before you go on to your second placement. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    Different providers will have different placement structures, so you may spend more time in some placement schools than others. But each trainee needs 120 days placement in at least 2 schools to get qualified teacher status (QTS). 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    Your time spent teaching whole lessons will increase. 
+                                </p>
                             </li>
+
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">Dec</p>
-                                <h3 class="dwp-timeline__heading">End of first placement</h3>
-                                <p class="dwp-timeline__by-line">You’ll finish your first placement and submit your summative QTS assessment  (and PGCE assessment if you’re doing one). </p>
+                                <h3 class="dwp-timeline__heading">
+                                    Summer term (April to July) 
+                                </h3>
+                                <p class="dwp-timeline__by-line">
+                                    You may submit another PGCE assignment. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll be continuing to gather evidence to show you meet your provider’s training criteria (your provider will explain exactly how). 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    After your second placement, you might return to your first placement school, stay in your second, or possibly go to a third. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    By the end of your training, you’ll need to have taught at least 80% of a full teacher’s timetable for at least 6 weeks. 
+                                </p>
                             </li>
+
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">Jan</p>
-                                <h3 class="dwp-timeline__heading">Start 2nd placement</h3>
-                                <p class="dwp-timeline__by-line">You’ll begin your second placement at a different school and focus on different aspects of teaching. </p>
-                                <p class="dwp-timeline__by-line">Some trainees begin applying for their first role.</p>
+                                <h3 class="dwp-timeline__heading">
+                                    End of the academic year 
+                                </h3>
+                                <p class="dwp-timeline__by-line">
+                                    You’ll finish your placements near the end of the academic year and spend time preparing for any final assessments. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    Once you’ve passed your final assessments, you’ll be awarded qualified teacher status – congratulations! 
+                                </p>
                             </li>
+
                             <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">Feb</p>
-                                <h3 class="dwp-timeline__heading">Formative assessments</h3>
-                                <p class="dwp-timeline__by-line">You may submit a formative assessment at this point in preparation for the real one in April.</p>
-                            </li>
-                            <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">April</p>
-                                <h3 class="dwp-timeline__heading">Summative assessments </h3>
-                                <p class="dwp-timeline__by-line">You’ll submit your second summative assessment. </p>
-                                <p class="dwp-timeline__by-line">Some trainees may return to their first school while others will stay in their second placement school till the end of May.</p>
-                            </li>
-                            <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">May</p>
-                                <h3 class="dwp-timeline__heading">End of placements</h3>
-                                <p class="dwp-timeline__by-line">You’ll finish your placement at the end of May and spend the next month preparing for your final assessments in June.</p>
-                            </li>
-                            <li class="dwp-timeline__item">
-                                <p class="dwp-timeline__datetime">June</p>
-                                <h3 class="dwp-timeline__heading">Final assessments</h3>
-                                <p class="dwp-timeline__by-line">After completing your final assessments you’ll hopefully gain QTS and begin looking for your new role as an ECT.</p>
+                                <h3 class="dwp-timeline__heading">
+                                    September 
+                                </h3>
+                                <p class="dwp-timeline__by-line">
+                                    You’re now an early career teacher (ECT)! 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    For your first 2 years, you’ll receive a package of support. You'll get this automatically if you work in a maintained school but some academies and special schools provide this for ECTs, too. 
+                                </p>
+                                <p class="dwp-timeline__by-line">
+                                    <a target="_blank" href="https://getintoteaching.education.gov.uk/life-as-a-teacher/teaching-as-a-career/early-career-teachers">Find out more about support for early career teachers</a>
+                                </p>
                             </li>
                             
                         </ol>
