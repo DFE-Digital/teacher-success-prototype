@@ -1,0 +1,87 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="support" %}
+
+{% block content %}
+
+<div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile">
+            <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/home">Get ready to teach</a></li>
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/prepare/prepare">Get Support</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="dfe-content-page--header govuk-!-padding-bottom-4 a">
+   <div class="dfe-width-container">
+      <div class="noprint"></div>
+      <div class="govuk-grid-row govuk-!-padding-top-7">
+         <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Get Support</h1>
+            <p class="govuk-body-l">#</p>
+         </div>
+      
+      </div>
+   </div>
+</div>
+
+<div class="hero yellow content-even b">
+    <picture>
+       <img src="/public/images/preparebanner.png" alt="" aria-hidden="true">
+    </picture>
+  <div class="hero__title">
+    <h1 class="heading--box-padded heading--box-padding-l heading--box-white">Get Support</h1>
+  </div>
+</div>
+
+
+  <div class="govuk-width-container">
+
+
+  <div class="govuk-main-wrapper">
+
+    <nav class="category__nav-cards">
+        <ul class="dfe-grid-container">
+
+            <li class="category__nav-card">
+                <a class="link--black" href="#">
+                    <div class="category__nav-card--content">
+                        <h2 class="govuk-heading-m">Support from within your course</h2>
+                        <p>#</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="category__nav-card">
+                <a class="link--black" href="#">
+                    <div class="category__nav-card--content">
+                        <h2 class="govuk-heading-m">Support available outside your course</h2>
+                        <p>#</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="category__nav-card">
+                <a class="link--black" href="#">
+                    <div class="category__nav-card--content">
+                        <h2 class="govuk-heading-m">Financial support guidance</h2>
+                        <p>#</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+   
+
+
+</div>
+
+</div>
+
+{% include "feedbackcta.html" %}
+
+{% endblock %}
