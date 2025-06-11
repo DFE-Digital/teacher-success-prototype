@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (utms.utm_name) {
     document.getElementById("name").textContent = `${utms.utm_name}`;
+    document.getElementById("name2").textContent = `${utms.utm_name}`;
     document.getElementById("testname").textContent = `${utms.utm_test}`;
   }
 
