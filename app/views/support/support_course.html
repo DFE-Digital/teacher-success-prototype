@@ -1,0 +1,100 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Support through your training course" %}
+
+{% block content %}
+
+<div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile">
+            <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/home">Get ready to teach</a></li>
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/resources/resources">Support through your training course</a></li>
+                <li class="govuk-breadcrumbs__list-item">Support through your training course</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-grid-row govuk-!-padding-top-1">
+            <div class="govuk-grid-column-three-quarters">
+                <h1 class="govuk-heading-xl govuk-!-padding-top-1">Support through your training course</h1>
+                <p class="govuk-body-l">Find out who you can go to for support during your teacher training, from your mentors and tutors to unions and Education Support.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+   <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+
+            {% include "support/sidebar.html" %}
+
+            <div class="govuk-grid-column-three-quarters markdown ">
+
+                <p class="govuk-body">
+                    There are lots of people on hand to support you during your training. These might be called different things depending on your training provider, but you can expect to receive support from the following places. 
+                </p>
+               
+                <h2 class="govuk-heading-l a" id="before-you-start" style="padding:0px; width:100%;">Your school-based mentor</h2>
+
+                <h2 class="govuk-heading-l yellow b" id="before-you-start">Your school-based mentor</h2>
+
+                <p class="govuk-body">
+                    Your school-based mentor is there to support you with your day-to-day learning and development within your placement school. They can help you with: 
+                </p>
+
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>lesson planning </li>
+                    <li>classroom management</li>
+                    <li>support dealing with teaching challenges, for example, pupil behaviour, using school systems or workload </li>
+                </ul>
+
+                <h2 class="govuk-heading-l a" id="before-you-start" style="padding:0px; width:100%;">Your provider-based mentor or tutor </h2>
+
+                <h2 class="govuk-heading-l yellow b" id="before-you-start">Your provider-based mentor or tutor </h2>
+
+                <p class="govuk-body">
+                   Your provider-based mentor or tutor is your point of contact for your specific training course. They can help you with: 
+                </p>
+
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>questions about your training course, for example, how you should be gathering evidence for qualified teacher status (QTS) </li>
+                    <li>assessment questions </li>
+                    <li>liaising between you and your placement school, for example, if you do not feel you’re being adequately supported </li>
+                </ul>
+
+
+
+                <h2 class="govuk-heading-l a" id="before-you-start" style="padding:0px; width:100%;">Your training provider</h2>
+
+                <h2 class="govuk-heading-l yellow b" id="before-you-start">Your training provider</h2>
+
+                <p class="govuk-body">
+                   Your training provider may offer services beyond your day to day placement experiences and learning. They can help you with: 
+                </p>
+
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>questions or concerns with the content of your training programme </li>
+                    <li>access to specific resources or materials </li>
+                    <li>additional support, for example, your provider might offer careers, mental health or financial services </li>
+                </ul>
+
+                
+            </div>
+           
+            
+        </div>
+        
+      
+   </div>
+</section>
+
+
+{% include "feedbackcta.html" %}
+
+
+{% endblock %}
