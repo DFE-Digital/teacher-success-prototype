@@ -52,6 +52,22 @@
 
 {% block header %}
 
+{% if data['testname'] == 'atest' or data['testname'] == 'btest' %}
+  
+{% else %}
+
+<div style="background-color:red;">
+
+ <div class="govuk-width-container">
+  <p style="color:white;">You must select a test scenario. select <a style="color:white;" href="/form?utm_test=atest">test a</a> or <a style="color:white;" href="/form?utm_test=btest">test b</a> please.</p>
+ </div>
+
+</div>
+  
+{% endif %}
+
+
+
 <header class="govuk-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="govuk-header__logo">
