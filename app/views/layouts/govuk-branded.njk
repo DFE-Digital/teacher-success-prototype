@@ -124,7 +124,22 @@
     </div>
   </div>
 </section>
-  
+
+<div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-phase-banner">
+            <p class="govuk-phase-banner__content">
+                <strong class="govuk-tag govuk-phase-banner__content__tag">
+                Beta
+                </strong>
+                <span class="govuk-phase-banner__text">
+                This is a new service. Help us improve it and <a class="govuk-link govuk-link--no-visited-state" href="#">give your feedback (opens in new tab)</a>.
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
 
 {% set footerItems = [
@@ -173,7 +188,7 @@
         target: "_blank"
       }
     },{
-      href: "#",
+      href: "/footer/feedback",
       text: "Feedback"
     },{
       href: "#",
