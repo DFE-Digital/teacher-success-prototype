@@ -1,6 +1,6 @@
 <h1>Get ready to teach prototype </h1>
 
-A prototype for testing concepts for a get ready to reach service.
+A prototype for testing concepts for a get ready to teach service.
 
 <h2>How to setup</h2>
 
