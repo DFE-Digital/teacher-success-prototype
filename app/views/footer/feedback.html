@@ -1,0 +1,206 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Give feedback" %}
+
+{% block content %}
+
+
+<div class="dfe-content-page--header govuk-!-padding-top-5 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-grid-row govuk-!-padding-top-1">
+            <div class="govuk-grid-column-three-quarters">
+                <h1 class="govuk-heading-xl govuk-!-padding-top-1">Give feedback</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+   <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+            
+            <div class="govuk-grid-column-three-quarters">
+
+                <form action="/footer/feedback-submitted" method="post" novalidate>
+
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            <h2 class="govuk-fieldset__heading">
+                                Do you need to report a problem or request support with using Get ready to teach? 
+                            </h2>
+                            </legend>
+                            <div class="govuk-radios" data-module="govuk-radios">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="problem" name="problem" type="radio" value="yes" aria-describedby="problem-item-hint">
+                                    <label class="govuk-label govuk-radios__label" for="problem">
+                                    Yes
+                                    </label>
+                                    <div id="problem-item-hint" class="govuk-hint govuk-radios__hint">
+                                        To report a problem or for support using Get ready to teach, please use the <a href="#">support form</a>
+                                    </div>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="problem-2" name="problem" type="radio" value="no">
+                                    <label class="govuk-label govuk-radios__label" for="problem-2">
+                                    No
+                                    </label> 
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            <h2 class="govuk-fieldset__heading">
+                                How satisfied are you with using Get ready to teach? 
+                            </h2>
+                            </legend>
+                            <div class="govuk-radios" data-module="govuk-radios">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="satisfied" name="satisfied" type="radio" value="Highly satisfied" aria-describedby="satisfied-item-hint">
+                                    <label class="govuk-label govuk-radios__label" for="satisfied">
+                                        Highly satisfied
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="satisfied-2" name="satisfied" type="radio" value="Somewhat satisfied ">
+                                    <label class="govuk-label govuk-radios__label" for="satisfied-2">
+                                        Somewhat satisfied 
+                                    </label> 
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="satisfied-3" name="satisfied" type="radio" value="Neither satisfied nor dissatisfied">
+                                    <label class="govuk-label govuk-radios__label" for="satisfied-3">
+                                        Neither satisfied nor dissatisfied
+                                    </label> 
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="satisfied-4" name="satisfied" type="radio" value="Somewhat dissatisfied">
+                                    <label class="govuk-label govuk-radios__label" for="satisfied-4">
+                                        Somewhat dissatisfied
+                                    </label> 
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="satisfied-5" name="satisfied" type="radio" value="Highly dissatisfied">
+                                    <label class="govuk-label govuk-radios__label" for="satisfied-5">
+                                        Highly dissatisfied
+                                    </label> 
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            <h2 class="govuk-fieldset__heading">
+                                Which area of the website is your feedback for? 
+                            </h2>
+                            </legend>
+                            
+                            <div class="govuk-radios" data-module="govuk-radios">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="The whole site">
+                                    <label class="govuk-label govuk-radios__label" for="contact">
+                                        The whole site
+                                    </label>
+                                </div>
+
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="A specific page" data-aria-controls="conditional-contact-2">
+                                    <label class="govuk-label govuk-radios__label" for="contact-2">
+                                        A specific page 
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                                    <div class="govuk-form-group">
+                                    <label class="govuk-label" for="nameofpage">
+                                        Enter the URL or the name of the page 
+                                    </label>
+                                    <input class="govuk-input govuk-!-width-half" id="nameofpage" name="nameofpage" type="text">
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+
+                    <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count" data-maxlength="1200">
+                        <h2 class="govuk-label-wrapper">
+                            <label class="govuk-label govuk-label--m" for="with-hint">
+                                What feedback would you like to give? 
+                            </label>
+                        </h2>
+                        <div id="with-hint-hint" class="govuk-hint">
+                            Do not include any information that could identify you personally (such as your name or the name of your provider). 
+                        </div>
+                        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="15" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                        <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+                            You can enter up to 1200 characters
+                        </div>
+                    </div>
+
+
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="future-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            <h2 class="govuk-fieldset__heading">
+                                Would you be interested in participating in future user research?
+                            </h2>
+                            </legend>
+                            
+                            <div class="govuk-radios" data-module="govuk-radios">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="future-2" name="future" type="radio" value="A specific page" data-aria-controls="conditional-future-2">
+                                    <label class="govuk-label govuk-radios__label" for="future-2">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-future-2">
+                                    <div class="govuk-form-group">
+                                    <label class="govuk-label" for="email">
+                                        What is your email address?
+                                    </label>
+                                    <div id="hint" class="govuk-hint">
+                                        We'll only use this to tell you about opportunities to take part in user research that helps us improve Department for Education services. 
+                                    </div>
+                                    <input class="govuk-input govuk-!-width-half" id="email" name="email" type="text">
+                                    </div>
+                                </div>
+                                
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="future" name="future" type="radio" value="No">
+                                    <label class="govuk-label govuk-radios__label" for="future">
+                                        No
+                                    </label>
+                                </div>
+
+                                                        
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+                    <button type="submit" class="govuk-button" data-module="govuk-button">
+                        Submit feedback
+                    </button>
+
+                </form>
+
+            
+            </div>
+
+        </div>
+        
+      
+   </div>
+</section>
+
+
+
+{% endblock %}
