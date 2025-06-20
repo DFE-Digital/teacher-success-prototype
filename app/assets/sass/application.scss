@@ -598,16 +598,16 @@ a.dfe-vertical-nav__link {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     padding: .18em 0;
-    background: #f162a0;
-    box-shadow: 1rem 0 0 #f162a0, -1rem 0 0 #f162a0;
+    background: #F486B5;
+    box-shadow: 1rem 0 0 #F486B5, -1rem 0 0 #F486B5;
   }
 
   .heading--highlight-green span, ol.photo-quote-list .item.green h3 span {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     padding: .18em 0;
-    background: #00ab92;
-    box-shadow: 1rem 0 0 #00ab92, -1rem 0 0 #00ab92;
+    background: #00BDA0;
+    box-shadow: 1rem 0 0 #00BDA0, -1rem 0 0 #00BDA0;
   }
 
   .image-block ul {
@@ -1004,8 +1004,8 @@ ul.steps{
       &:focus{
         color: #fff;
         background-color: #1d1d1b;
-        box-shadow: 4px 4px #f162a0;
-        border-color: #f162a0;
+        box-shadow: 4px 4px #F486B5;
+        border-color: #F486B5;
         outline: 4px solid rgba(0, 0, 0, 0);
 
         h2{
