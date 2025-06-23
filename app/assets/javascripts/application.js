@@ -100,6 +100,18 @@ document.addEventListener('DOMContentLoaded', function () {
         givefeedback.addEventListener('click', function () {
           document.getElementById('feedback-panel').style.display = 'block';
           document.getElementById('dfe-feedback-banner--content-questions').style.display = 'none';
+
+          const panel = document.getElementById('feedback-panel');
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+          this.setAttribute('aria-expanded', String(!isExpanded));
+          panel.style.display = isExpanded ? 'none' : 'block';
+          panel.setAttribute('aria-hidden', String(isExpanded));
+
+          if (!isExpanded) {
+            document.getElementById('feedback_form_input').focus();
+          }
+
         });
     }
 
