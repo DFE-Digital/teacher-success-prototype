@@ -1087,3 +1087,72 @@ ul.steps{
 
 
 }
+
+
+//give feedback banner
+
+.dfe-feedback-banner {
+    background-color: #f3f2f1;
+    border: 1px solid #b1b4b6;
+    margin-bottom: 30px;
+
+    .govuk-button{
+      margin-bottom: 0px;
+    }
+
+    .govuk-button-group {
+      margin-bottom: 0px;
+    }
+
+    @media (max-width: 40.0625em) {
+
+      .govuk-button-group {
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: baseline;
+          width:100%;
+
+          .govuk-button{
+            width:46%;
+            margin:2% 2% 20px 2%;
+          }
+      }
+    }
+}
+
+.dfe-feedback-banner .dfe-feedback-banner--content {
+    padding: 20px 15px;
+}
+
+.dfe-feedback-banner .dfe-feedback-banner--content .dfe-feedback-banner--content-questions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 40.0625em) {
+       flex-direction: column;
+       width: 100%;
+    }
+
+    .dfe-feedback-banner--content-question {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 40.0625em) {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+
+}
+
+
+.dfe-feedback-banner .dfe-feedback-banner--content .dfe-feedback-banner--content-questions .dfe-feedback-banner--content-question h2 {
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.dfe-feedback-banner .dfe-feedback-banner--content .govuk-button--secondary {
+    background: #fff !important;
+}

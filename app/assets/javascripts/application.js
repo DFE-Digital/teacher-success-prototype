@@ -64,8 +64,58 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('submit').submit();
   }
   
- 
+});
+
+  
+
+
 });
 
 
+
+//submit feedback form
+
+document.addEventListener('DOMContentLoaded', function () {
+    const yesButton = document.getElementById('yesfeedback');
+    const noButton = document.getElementById('nofeedback');
+    const givefeedback = document.getElementById('givefeedback');
+    const submitfeedback = document.getElementById('submitfeedback');
+    const cancelfeedback = document.getElementById('cancelfeedback');
+
+    if (yesButton) {
+        yesButton.addEventListener('click', function () {
+          document.getElementById('thanksMessage').style.display = 'block';
+          document.getElementById('questionForm').style.display = 'none';
+        });
+    }
+
+    if (noButton) {
+        noButton.addEventListener('click', function () {
+          document.getElementById('thanksMessage').style.display = 'block';
+          document.getElementById('questionForm').style.display = 'none';
+        });
+    }
+
+    if (givefeedback) {
+        givefeedback.addEventListener('click', function () {
+          document.getElementById('feedback-panel').style.display = 'block';
+          document.getElementById('dfe-feedback-banner--content-questions').style.display = 'none';
+        });
+    }
+
+    if (submitfeedback) {
+        submitfeedback.addEventListener('click', function () {
+          document.getElementById('dfe-feedback-banner--content-questions').style.display = 'flex';
+          document.getElementById('questionForm').style.display = 'none';
+          document.getElementById('problemButton').style.display = 'none';
+          document.getElementById('thanksMessage').style.display = 'block';
+          document.getElementById('feedback-panel').style.display = 'none';
+        });
+    }
+    if (cancelfeedback) {
+        cancelfeedback.addEventListener('click', function () {
+          document.getElementById('dfe-feedback-banner--content-questions').style.display = 'flex';
+          document.getElementById('feedback-panel').style.display = 'none';
+        });
+    }
 });

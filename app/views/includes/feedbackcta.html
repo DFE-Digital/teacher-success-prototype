@@ -1,0 +1,42 @@
+
+<section class="govuk-!-padding-top-5">
+    <div class="dfe-width-container">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <div class="dfe-feedback-banner">
+                    <div class="dfe-feedback-banner--content">
+                        <form id="feedbackForm" action="/form-response/helpful" method="post">
+                            <div id="dfe-feedback-banner--content-questions" class="dfe-feedback-banner--content-questions">
+                                <div class="dfe-feedback-banner--content-question" id="questionForm">
+                                    <h2 class="govuk-heading-s dfe-feedback-banner--content-question-text">Is this page
+                                        useful?</h2>
+                                    <div class="govuk-button-group">
+                                       <button id="yesfeedback" type="button" class="govuk-button govuk-button--secondary" value="Yes" data-module="govuk-button">Yes</button>
+                                       <button id="nofeedback" type="button" class="govuk-button govuk-button--secondary" value="No" data-module="govuk-button">No</button>
+                                    </div>
+                                </div>
+                                <div class="dfe-feedback-banner--content-message govuk-!-padding-bottom-3" id="thanksMessage" hidden="">Thank you
+                                    for your feedback</div>
+                                <div class="dfe-feedback-banner--content-problem" id="problemButton">
+                                    <button id="givefeedback" type="button" class="govuk-button govuk-button--secondary" data-module="govuk-button">Give feedback about this page</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="dfe-feedback-panel" id="feedback-panel" style="display: none;" aria-hidden="true">
+                                <h2 class="govuk-heading-m">Give feedback about this page</h2>
+                                <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                                    <textarea class="govuk-textarea govuk-js-character-count" id="feedback_form_input" name="feedback_form_input" rows="5" aria-describedby="feedback_form_input-hint"></textarea><div id="feedback_form_input-info" class="govuk-hint govuk-character-count__message govuk-visually-hidden">You can enter up to 200
+                                        characters</div><div class="govuk-hint govuk-character-count__message govuk-character-count__status" aria-hidden="true">You have 200 characters remaining</div><div class="govuk-character-count__sr-status govuk-visually-hidden" aria-live="polite">You have 200 characters remaining</div>
+                                    
+                                </div>
+                                <div class="govuk-button-group">
+                                    <button id="submitfeedback" class="govuk-button" data-module="govuk-button" type="submit">Submit</button>
+                                    <button id="cancelfeedback" class="govuk-button govuk-button--secondary" type="button" data-module="govuk-button" id="cancelButton">Cancel</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
