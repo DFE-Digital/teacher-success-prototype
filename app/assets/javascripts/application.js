@@ -15,6 +15,41 @@ function getUTMParameters() {
 }
 
 
+//cookie banner code on cookie banner page, saves session need to open new tab to reset
+
+document.addEventListener('DOMContentLoaded', function () {
+  const cookieBanner = document.querySelector('.govuk-cookie-banner')
+  const acceptButton = document.getElementById('accept-cookies')
+  const rejectButton = document.getElementById('reject-cookies')
+
+  // Check if a decision has already been made this session
+  const cookiesPreference = sessionStorage.getItem('cookies-preference')
+
+  if (cookiesPreference === 'accepted' || cookiesPreference === 'rejected') {
+    if (cookieBanner) cookieBanner.style.display = 'none'
+  }
+
+  function hideBannerAndSaveChoice(choice) {
+    sessionStorage.setItem('cookies-preference', choice)
+    if (cookieBanner) cookieBanner.style.display = 'none'
+  }
+
+  if (acceptButton) {
+    acceptButton.addEventListener('click', function () {
+      hideBannerAndSaveChoice('accepted')
+    })
+  }
+
+  if (rejectButton) {
+    rejectButton.addEventListener('click', function () {
+      hideBannerAndSaveChoice('rejected')
+    })
+  }
+})
+
+
+//UTMS code
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const utms = getUTMParameters();
