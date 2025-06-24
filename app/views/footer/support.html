@@ -1,0 +1,130 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Get support" %}
+
+{% block content %}
+
+
+<div class="dfe-content-page--header govuk-!-padding-top-5 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-grid-row govuk-!-padding-top-1">
+            <div class="govuk-grid-column-three-quarters">
+                {% set flashMessage = flash[0] %}
+                {{ govukNotificationBanner({
+                    html: "<h2 class=\"govuk-heading-m\">" + flashMessage.title + "</h2><p class=\"govuk-body\">" + flashMessage.detail + "</p>",
+                    type: "success",
+                    icon: false
+                }) if flash and flash.length }}
+                <h1 class="govuk-heading-xl govuk-!-padding-top-1">Get support</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+   <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+            
+            <div class="govuk-grid-column-three-quarters">
+
+                <p>
+                    You can use this form to ask a question or report a problem. If you have particular feedback about Get ready to teach, please use the give <a href="feedback">feedback form</a>.
+                </p>
+                <p>
+                    We will aim to resolve your issue as soon as possible.
+                </p>
+    
+                <div class="govuk-form-group">
+                    <label class="govuk-label govuk-label--m" for="name">
+                        Name
+                    </label>
+                    <input class="govuk-input" id="name" name="eventName" type="text">
+                </div>
+                <div class="govuk-form-group">
+                    <label class="govuk-label govuk-label--m" for="name">
+                        Email
+                    </label>
+                    <input class="govuk-input" id="name" name="eventName" type="text">
+                </div>
+                
+
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            <h2 class="govuk-fieldset__heading">
+                                What area of the website is your problem or question about? 
+                            </h2>
+                            </legend>
+                            
+                            <div class="govuk-radios" data-module="govuk-radios">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="The whole site">
+                                    <label class="govuk-label govuk-radios__label" for="contact">
+                                        The whole site
+                                    </label>
+                                </div>
+
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="A specific page" data-aria-controls="conditional-contact-2">
+                                    <label class="govuk-label govuk-radios__label" for="contact-2">
+                                        A specific page 
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                                    <div class="govuk-form-group">
+                                    <label class="govuk-label" for="nameofpage">
+                                        Enter the URL or the name of the page 
+                                    </label>
+                                    <input class="govuk-input govuk-!-width-half" id="nameofpage" name="nameofpage" type="text">
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+
+                    <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count" data-maxlength="1200">
+                        <h2 class="govuk-label-wrapper">
+                            <label class="govuk-label govuk-label--m" for="with-hint">
+                                Tell us about your problem or question
+                            </label>
+                        </h2>
+                        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="10" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                        <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+                            You can enter up to 1200 characters
+                        </div>
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label govuk-label--m" for="file-upload-1">
+                            Upload a file
+                        </label>
+                        <div
+                            class="govuk-drop-zone"
+                            data-module="govuk-file-upload">
+                            <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
+                        </div>
+                    </div>
+                    
+                    <form method="post" action="">
+
+                        {{ govukButton({
+                            text: "Submit support"
+                        }) }}
+
+                    </form>
+
+            
+            </div>
+
+        </div>
+        
+      
+   </div>
+</section>
+
+
+
+{% endblock %}

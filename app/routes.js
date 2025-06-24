@@ -35,6 +35,9 @@ router.post('/footer/feedback', (req, res) => {
 
 //get support submit
 router.post('/footer/support', (req, res) => {
-    req.flash('success', 'Cookies preferences saved')
-    res.redirect('/footer/cookies')
+    req.flash('success', {
+        title: 'Support submitted',
+        detail: 'Your request for help has been sent.'
+    })
+    res.redirect('/footer/support')
 })
