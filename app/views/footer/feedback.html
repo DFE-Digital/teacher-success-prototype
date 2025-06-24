@@ -9,6 +9,12 @@
     <div class="dfe-width-container">
         <div class="govuk-grid-row govuk-!-padding-top-1">
             <div class="govuk-grid-column-three-quarters">
+                {% set flashMessage = flash[0] %}
+                {{ govukNotificationBanner({
+                    html: "<h2 class=\"govuk-heading-m\">" + flashMessage.title + "</h2><p class=\"govuk-body\">" + flashMessage.detail + "</p>",
+                    type: "success",
+                    icon: false
+                }) if flash and flash.length }}
                 <h1 class="govuk-heading-xl govuk-!-padding-top-1">Give feedback</h1>
             </div>
         </div>
@@ -20,8 +26,6 @@
         <div class="govuk-grid-row">
             
             <div class="govuk-grid-column-three-quarters">
-
-                <form action="/footer/feedback-submitted" method="post" novalidate>
 
                     <div class="govuk-form-group">
                         <fieldset class="govuk-fieldset">
@@ -186,11 +190,13 @@
                         </fieldset>
                     </div>
 
-                    <button type="submit" class="govuk-button" data-module="govuk-button">
-                        Submit feedback
-                    </button>
+                    <form method="post" action="">
 
-                </form>
+                        {{ govukButton({
+                        text: "Submit feedback"
+                        }) }}
+
+                    </form>
 
             
             </div>

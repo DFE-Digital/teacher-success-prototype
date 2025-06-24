@@ -17,7 +17,24 @@ router.all('*', (req, res, next) => {
 // Add your routes here
 
 
+
+//cookies submit
 router.post('/footer/cookies', (req, res) => {
     req.flash('success', 'Cookies preferences saved')
     res.redirect('/footer/cookies')
-  })
+})
+
+//give feedback submit
+router.post('/footer/feedback', (req, res) => {
+    req.flash('success', {
+        title: 'Feedback submitted',
+        detail: 'Your feedback will be used to improve this service.'
+    })
+    res.redirect('/footer/feedback')
+})
+
+//get support submit
+router.post('/footer/support', (req, res) => {
+    req.flash('success', 'Cookies preferences saved')
+    res.redirect('/footer/cookies')
+})
