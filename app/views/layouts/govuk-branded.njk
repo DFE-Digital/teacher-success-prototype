@@ -119,11 +119,29 @@
               Get support
             </a>
           </li>
-          <li class="govuk-service-navigation__item">
-            <a class="govuk-service-navigation__link" href="#">
+         
+          {% if data ['account'] == 'Yes' %}
+          <div class="flex-nav-right">
+            <li class="govuk-service-navigation__item {% if pageName == 'profile' %} govuk-service-navigation__item--active {% endif %}">
+              <a class="govuk-service-navigation__link" href="profile">
+                Your profile
+              </a>
+            </li>
+            <li class="govuk-service-navigation__item">
+              <a class="govuk-service-navigation__link" href="/home?account">
+                Sign out
+              </a>
+            </li>
+          </div>
+
+          {% else %}  
+           <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="/signin">
               Sign in
             </a>
           </li>
+          {% endif %}
+
         </ul>
       </nav>
     </div>

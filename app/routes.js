@@ -41,3 +41,12 @@ router.post('/footer/support', (req, res) => {
     })
     res.redirect('/footer/support')
 })
+
+//sign in
+router.post('/signin', (req, res) => {
+    req.flash('success', {
+        title: 'Support submitted',
+        detail: 'Your request for help has been sent.'
+    })
+    res.redirect('/footer/support')
+})

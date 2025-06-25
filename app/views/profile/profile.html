@@ -1,18 +1,27 @@
-{% extends "layouts/main_profile.html" %}
+{% extends "layouts/main.html" %}
 
-{% set pageName="prepare" %}
+{% set pageName="profile" %}
 
 {% block content %}
 
-
+<div class="dfe-content-page--header govuk-!-padding-top-5 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-grid-row govuk-!-padding-top-1">
+            <div class="govuk-grid-column-three-quarters">
+                <h1 class="govuk-heading-xl govuk-!-padding-top-1">Your profile</h1>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
    <div class="govuk-width-container">
+        
         <div class="govuk-grid-row">
             
             <div class="govuk-grid-column-two-thirds">
 
-                <h1 class="govuk-heading-l">Your profile</h1>
+                <h2 class="govuk-heading-m">Your details</h2>
                 
                 <dl class="govuk-summary-list">
                     <div class="govuk-summary-list__row">
@@ -22,8 +31,7 @@
                         <dd class="govuk-summary-list__value">
                         Sarah Philips
                         </dd>
-                        <dd class="govuk-summary-list__actions">
-                        </dd>
+                        
                     </div>
                     <div class="govuk-summary-list__row">
                         <dt class="govuk-summary-list__key">
@@ -32,8 +40,7 @@
                         <dd class="govuk-summary-list__value">
                         3482940
                         </dd>
-                        <dd class="govuk-summary-list__actions">
-                        </dd>
+                       
                     </div>
                     <div class="govuk-summary-list__row">
                         <dt class="govuk-summary-list__key">
@@ -42,9 +49,7 @@
                         <dd class="govuk-summary-list__value">
                         sarah@email.com
                         </dd>
-                        <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> address</span></a>
-                        </dd>
+                       
                     </div>
                     <div class="govuk-summary-list__row">
                         <dt class="govuk-summary-list__key">
@@ -65,8 +70,34 @@
                     
                 </dl>
             </div>
+
+            <!--
+
+            <div class="govuk-grid-column-one-third">
+                <aside class="app-related" aria-labelledby="support-title" style="padding-top: 15px;  border-top: 2px solid #1d70b8;">
+                    <h2 class="govuk-heading-s govuk-!-margin-bottom-2" id="support-title">Aside</h2>
+
+                    <ul class="govuk-list govuk-!-font-size-16">
+                        <li>Useful thing <a class="govuk-link" href="#">chat online</a></li>
+                        <li>Monday to Friday, 8:30am to 5:30pm (except public&nbsp;holidays)</li>
+                    </ul>
+
+                </aside>
+            </div>
         
         </div>
+        <div class="govuk-grid-row">
+            
+            <div class="govuk-grid-column-one-half">
+
+                <h2 class="govuk-heading-m">Email preferences</h2>
+                
+                
+            </div>
+        
+        </div>
+
+        
         <div class="govuk-grid-row">
             
             <div class="govuk-grid-column-full">
@@ -154,6 +185,29 @@
                 </div>
             </div>
         </section>
+
+        <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--l">
+
+        <section class="govuk-!-margin-top- govuk-!-margin-bottom-7">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                    <div class="cta-banner">
+                        <div class="cta-banner-text">
+                            <h2 class="govuk-heading-l">Keep up to date with new content</h2>
+                            <p class="govuk-body-m">You're halfway through your training year. Give quick feedback on how you've found it so far.  Your views can make a difference for future trainees.</p>
+                            <button type="submit" class="govuk-button" data-module="govuk-button">
+                                Continue to survey
+                            </button>
+                        </div>
+                        <div class="cta-banner-img">
+                            <img class="full-width-image" title="Adult sat with a group of young children playing with building blocks" src="//images.ctfassets.net/dvmeh832nmjc/6Se0obUNjNwHvl6CKPTe9b/ecba60f50fa890928b2506deed5174e8/homepage.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        -->
       
    </div>
 </section>
