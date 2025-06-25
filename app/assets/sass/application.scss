@@ -33,6 +33,10 @@ $govuk-suppressed-warnings: ("legacy-organisation-colours");
   }
 }
 
+.flex-nav-right{
+  display: flex;
+}
+
 .dfe-content-page--header {
   background: rgb(234.7, 241.9, 246.4);
 }
