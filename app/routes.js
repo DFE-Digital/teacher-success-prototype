@@ -36,17 +36,8 @@ router.post('/footer/feedback', (req, res) => {
 //get support submit
 router.post('/footer/support', (req, res) => {
     req.flash('success', {
-        title: 'Support submitted',
-        detail: 'Your request for help has been sent.'
-    })
-    res.redirect('/footer/support')
-})
-
-//sign in
-router.post('/signin', (req, res) => {
-    req.flash('success', {
-        title: 'Support submitted',
-        detail: 'Your request for help has been sent.'
+        title: 'Support request submitted',
+        detail: 'Your request for support has been submitted to our technical team. We will work to resolve your issue as soon as we can.'
     })
     res.redirect('/footer/support')
 })
