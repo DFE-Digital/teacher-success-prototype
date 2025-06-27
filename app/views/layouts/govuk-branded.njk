@@ -55,7 +55,7 @@
 {% if data['testname'] == 'atest' or data['testname'] == 'btest' %}
   
 {% else %}
-
+<!--
 <div style="background-color:red;">
 
  <div class="govuk-width-container">
@@ -63,7 +63,7 @@
  </div>
 
 </div>
-  
+-->
 {% endif %}
 
 
@@ -186,15 +186,6 @@
     },{
       href: "/footer/accessibility",
       text: "Accessibility"
-    },{
-      href: "#",
-      text: data['testname'] 
-    }, {
-      href: "/form?utm_test=atest",
-      text: "go to A test"
-    },{
-      href: "/form?utm_test=btest",
-      text: "go to B test"
     }
 ] %}
 
