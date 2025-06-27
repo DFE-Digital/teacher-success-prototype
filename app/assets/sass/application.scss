@@ -656,16 +656,12 @@ a.dfe-vertical-nav__link {
     h2{
     color: #1d1d1b;
     display: inline-block;
-    padding: .6rem 0.6rem;
     box-sizing: border-box;
     max-width: calc(100% - 1.25rem);
 
-    &.blue{
-      background-color: #00b1eb;
-    }
-
     &.yellow{
       background-color: #f9b400;
+      padding: .6rem 0.6rem;
     }
 
   }
