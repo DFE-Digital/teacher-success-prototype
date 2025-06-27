@@ -477,22 +477,48 @@ a.dfe-vertical-nav__link {
 .prompt {
   background-color: #f3f2f1;
   border-top: #28a197 solid 10px;
-  margin: 25px 0;
+  margin: 45px 0 25px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
 }
 .prompt .svg-inline--fa {
   background-color: #28a197;
   color: #ffffff;
-  padding: 20px !important;
-  position: relative;
+  padding: 10px !important;
+  position: absolute;
   display: inline-block;
   width: 32px;
-  top: -15px;
-  left: -30px;
+  top: -30px;
+  left: 50%;
+  margin-left: -38px;
+
+  @media (min-width: 48.0625em) {
+    position: relative;
+    left: 5px;
+    top:-20px;
+    padding: 20px !important;
+  }
+
 }
+.prompt__container{
+  padding: 20px 10px 15px 10px;
+
+  @media (min-width: 48.0625em) {
+    padding: 20px 50px 50px 80px;
+  }
+
+  h2.govuk-heading-l{
+    padding-left: 0px;
+  }
+}
+
 .prompt .govuk-grid-column-one-quarter {
   margin-right: -120px;
+
+  @media (min-width: 48.0625em) {
+    margin-right: -120px;
+  }
 }
 .prompt .govuk-grid-column-three-quarters {
   padding: 15px;
