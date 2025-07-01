@@ -973,9 +973,14 @@ ul.steps{
         background-color: #f9b400;
         color: #1d1d1b;
         display: inline-block;
-        padding: 0.6rem 5.5rem 0.6rem 3.5rem;
+        padding: 0.6rem 5.5rem 0.6rem 1.5rem;
         box-sizing: border-box;
         max-width: calc(100% - 1.25rem);
+
+        @media (min-width: 48em) {
+          padding: 0.6rem 5.5rem 0.6rem 3.5rem;
+        }
+
       }
 
     }
