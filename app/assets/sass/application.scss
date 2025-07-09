@@ -455,18 +455,9 @@ a.dfe-vertical-nav__link {
   align-items: center;
   background-color: rgb(234.7, 241.9, 246.4);
   border:none;
-
-  &.light-yellow{
-    //background-color: rgba(249, 180, 0, 0.15);
-  }
-  &.light-pink{
-    //background-color: rgba(244, 134, 181, 0.15);
-  }
-  &.light-green{
-    //background-color: rgba(0, 189, 160, 0.15);
-  }
   
 }
+
 @media (max-width: 40.0525em) {
   .cta-banner {
     flex-direction: column;
