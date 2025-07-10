@@ -425,13 +425,39 @@ a.dfe-vertical-nav__link {
 
 //cta banner
 
+.col{
+  margin-bottom: 15px;
+}
+
+@media (min-width: 40.0525em) {
+
+  .col-container {
+    display: flex; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+  }
+
+  .col {
+    flex:1; /* Make elements inside the container behave like table cells */
+    //height: 100%;
+    margin-bottom: 0px;
+
+    .cta-banner{
+      height: 100%;
+      align-items: baseline;
+    }
+}
+
+}
 
 .cta-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(234.7, 241.9, 246.4);
+  border:none;
+  
 }
+
 @media (max-width: 40.0525em) {
   .cta-banner {
     flex-direction: column;

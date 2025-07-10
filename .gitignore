@@ -12,3 +12,12 @@ usage-data-config.json
 .idea
 node_modules/*
 app/assets/javascripts/screenshots/*
+app/assets/javascripts/journey-map.html
+app/assets/javascripts/journey-map.json
+app/assets/javascripts/mapper.js
+app/assets/javascripts/preview.html
+app/assets/javascripts/screenshot.js
+app/assets/javascripts/screenshot.js
+app/assets/javascripts/screenshot.js
+app/assets/javascripts/screenshot.js
+app/assets/javascripts/screenshot.js
