@@ -112,6 +112,7 @@
 
          
           {% if data ['account'] == 'Yes' %}
+
             <li class="govuk-service-navigation__item {% if pageName == 'profile' %} govuk-service-navigation__item--active {% endif %}">
               <a class="govuk-service-navigation__link" href="/profile/profile">
                 Your profile
@@ -125,14 +126,11 @@
 
           {% else %}  
           
-          <!--
-          <li class="govuk-service-navigation__item">
-            <a class="govuk-service-navigation__link" href="/signin">
-              Sign in
-            </a>
-          </li>
-          -->
-
+            <li class="govuk-service-navigation__item {% if pageName == 'signin' %} govuk-service-navigation__item--active {% endif %}">
+              <a class="govuk-service-navigation__link" href="/onelogin/onelogin">
+                Sign in
+              </a>
+            </li>
           
           {% endif %}
 

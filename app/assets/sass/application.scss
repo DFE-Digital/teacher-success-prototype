@@ -433,7 +433,6 @@ a.dfe-vertical-nav__link {
 
   .col-container {
     display: flex; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
   }
 
   .col {
@@ -445,7 +444,7 @@ a.dfe-vertical-nav__link {
       height: 100%;
       align-items: baseline;
     }
-}
+  }
 
 }
 
