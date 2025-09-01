@@ -1,0 +1,177 @@
+{% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% from "govuk/components/character-count/macro.njk" import govukCharacterCount %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/cookie-banner/macro.njk" import govukCookieBanner %}
+{% from "govuk/components/date-input/macro.njk" import govukDateInput %}
+{% from "govuk/components/details/macro.njk" import govukDetails %}
+{% from "govuk/components/error-message/macro.njk" import govukErrorMessage %}
+{% from "govuk/components/error-summary/macro.njk" import govukErrorSummary %}
+{% from "govuk/components/exit-this-page/macro.njk" import govukExitThisPage %}
+{% from "govuk/components/fieldset/macro.njk" import govukFieldset %}
+{% from "govuk/components/file-upload/macro.njk" import govukFileUpload %}
+{% from "govuk/components/footer/macro.njk" import govukFooter %}
+{% from "govuk/components/header/macro.njk" import govukHeader %}
+{% from "govuk/components/hint/macro.njk" import govukHint %}
+{% from "govuk/components/input/macro.njk" import govukInput %}
+{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+{% from "govuk/components/label/macro.njk" import govukLabel %}
+{% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
+{% from "govuk/components/pagination/macro.njk" import govukPagination %}
+{% from "govuk/components/panel/macro.njk" import govukPanel %}
+{% from "govuk/components/password-input/macro.njk" import govukPasswordInput %}
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{% from "govuk/components/radios/macro.njk" import govukRadios %}
+{% from "govuk/components/select/macro.njk" import govukSelect %}
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
+{% from "govuk/components/skip-link/macro.njk" import govukSkipLink %}
+{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
+{% from "govuk/components/table/macro.njk" import govukTable %}
+{% from "govuk/components/tabs/macro.njk" import govukTabs %}
+{% from "govuk/components/tag/macro.njk" import govukTag %}
+{% from "govuk/components/task-list/macro.njk" import govukTaskList %}
+{% from "govuk/components/textarea/macro.njk" import govukTextarea %}
+{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+
+{%- set assetPath = assetPath | default('/plugin-assets/govuk-frontend' + govukFrontend.assetPath) -%}
+
+{% extends "govuk/template.njk" %}
+
+{% block head %}
+  {% block meta %}{% endblock %}
+  {% block stylesheets %}
+    {% include "govuk-prototype-kit/includes/stylesheets.njk" %}
+  {% endblock %}
+{% endblock %}
+
+{% block pageTitle %}
+  {% if pageName %}{{ pageName }} - {% endif %}{{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block header %}
+
+{% if data['testname'] == 'atest' or data['testname'] == 'btest' %}
+  
+{% else %}
+<!--
+<div style="background-color:red;">
+
+ <div class="govuk-width-container">
+  <p style="color:white;">You must select a test scenario. select <a style="color:white;" href="/form?utm_test=atest">test a</a> or <a style="color:white;" href="/form?utm_test=btest">test b</a> please.</p>
+ </div>
+
+</div>
+-->
+{% endif %}
+
+
+
+<header class="govuk-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-header__logo">
+      <a href="/" class="govuk-header__link govuk-header__link--homepage">
+        <img src="/public/images/department-for-education_white.png" alt="Department for Education" class="govuk-header__logotype">
+      </a>
+    </div>
+
+    <div class="govuk-header__content">
+      <nav aria-label="Menu" class="govuk-header__navigation">
+        <button aria-controls="navigation" aria-label="Show or hide menu" class="govuk-header__menu-button govuk-js-header-toggle" hidden="" type="button">Menu</button>
+        <ul class="govuk-header__navigation-list" id="navigation">
+          <li class="govuk-header__navigation-item">
+            <a class="govuk-header__link" href="#">GOV.UK One Login <span aria-hidden="true" class="one-login-svg"><svg aria-hidden="true" height="15" viewbox="0 0 22 22" width="15" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" data-darkreader-inline-fill fill="white" r="11" style="--darkreader-inline-fill: #e8e6e3;"></circle>
+            <path clip-rule="evenodd" d="M3.29297 18.8487C4.23255 15.4753 7.32741 13 11.0004 13C14.6731 13 17.7678 15.4749 18.7076 18.848C17.8058 19.7338 16.752 20.4654 15.5889 21H11.0004H6.41097C5.24819 20.4655 4.19463 19.7342 3.29297 18.8487Z" data-darkreader-inline-fill fill="#1D70B8" fill-rule="evenodd" style="--darkreader-inline-fill: #65aee7;"></path>
+            <circle cx="11" cy="7.75" data-darkreader-inline-fill fill="#1D70B8" r="3.75" style="--darkreader-inline-fill: #65aee7;"></circle>
+          </li>
+          <li class="govuk-header__navigation-item">
+            <a class="govuk-header__link" href="/home?account">Sign out</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+  </div>
+</header>
+
+
+<section aria-label="Service information" class="govuk-service-navigation"
+  data-module="govuk-service-navigation">
+  <div class="govuk-width-container">
+    <div class="govuk-service-navigation__container">
+      <span class="govuk-service-navigation__service-name">
+        <a href="/home" class="govuk-service-navigation__link">
+          iTeach
+        </a>
+      </span>
+      <nav aria-label="Menu" class="govuk-service-navigation__wrapper">
+        <button type="button" class="govuk-service-navigation__toggle govuk-js-service-navigation-toggle" aria-controls="navigation" hidden>
+          Menu
+        </button>
+        <ul class="govuk-service-navigation__list" id="navigation">
+          <li class="govuk-service-navigation__item {% if pageName == 'prepare' %} govuk-service-navigation__item--active {% endif %}">
+            <a class="govuk-service-navigation__link" href="/prepare/prepare">
+              Your timeline
+            </a>
+          </li>
+          <li class="govuk-service-navigation__item {% if pageName == 'resources' %} govuk-service-navigation__item--active {% endif %}">
+            <a class="govuk-service-navigation__link" href="/resources/resources" aria-current="true">
+              Your information
+            </a>
+          </li>
+          <li class="govuk-service-navigation__item {% if pageName == 'support' %} govuk-service-navigation__item--active {% endif %}">
+            <a class="govuk-service-navigation__link" href="/support/support">
+              Teacher services
+            </a>
+          </li>
+
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% set footerItems = [
+    {
+      href: "/footer/cookies",
+      text: "Cookies Policy"
+    },{
+      href: "https://www.gov.uk/government/publications/privacy-information-education-providers-workforce-including-teachers/privacy-information-education-providers-workforce-including-teachers",
+      text: "Privacy Policy",
+      attributes: {
+        lang: "cy",
+        hreflang: "cy",
+        target: "_blank"
+      }
+    },{
+      href: "/footer/feedback",
+      text: "Give feedback"
+    },{
+      href: "/footer/support",
+      text: "Get support"
+    },{
+      href: "/footer/accessibility",
+      text: "Accessibility"
+    }
+] %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: footerItems,
+      visuallyHiddenTitle: "Footer links"
+    }
+  }) }}
+{% endblock %}
+
+{% block bodyEnd %}
+  {% block scripts %}
+    {% include "govuk-prototype-kit/includes/scripts.njk" %}
+    {% block pageScripts %}{% endblock %}
+  {% endblock %}
+{% endblock %}
