@@ -1,0 +1,125 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="A day in the life of a trainee" %}
+
+{% block content %}
+
+<div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile">
+            <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/home">Home</a></li>
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/prepare/prepare">Prepare for training</a></li>
+                <li class="govuk-breadcrumbs__list-item">A day in the life of a trainee</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="dfe-content-page--header govuk-!-padding-top-1 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-grid-row govuk-!-padding-top-1">
+            <div class="govuk-grid-column-three-quarters">
+                <h1 class="govuk-heading-xl govuk-!-padding-top-1">A day in the life of a trainee </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+   <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+
+            {% include "prepare/sidebar.html" %}
+
+          
+
+            <div class="govuk-grid-column-three-quarters markdown">
+                
+                <h2 class="govuk-heading-l">Before the school day starts</h2>
+
+                <h3 class="govuk-heading-m">Morning routine and preparation</h3>
+
+                <p class="govuk-body">
+                    The time your day starts will depend on how far you’re travelling to placement. Most providers will aim to locate you as close as they can but you may have to commute to your placement school if this is not possible. 
+                </p>
+
+                <h2 class="govuk-heading-l">Between 8am and 9am</h2>
+
+                <h3 class="govuk-heading-m">Arrival and classroom setup</h3>
+
+                <p class="govuk-body">
+                    You’ll usually arrive before the school day actually starts to set up the classroom and finalise any last-minute preparations. This includes organizing resources, printing materials and attending morning briefings with other staff members. 
+                </p>
+                
+                <h2 class="govuk-heading-l">Between 9am and 10:30am</h2>
+
+                <h3 class="govuk-heading-m">Morning Lessons</h3>
+
+                <p class="govuk-body">
+                    You’ll likely greet your pupils as they enter the classroom. Depending how far along you are in your placement, you might be observing other teachers, leading small parts of lessons or delivering learning to your whole class. 
+                </p>
+
+                <h2 class="govuk-heading-l">Around 10:30am</h2>
+
+                <h3 class="govuk-heading-m">Break time</h3>
+
+                <p class="govuk-body">
+                    You’ll likely greet your pupils as they enter the classroom. Depending how far along you are in your placement, you might be observing other teachers, leading small parts of lessons or delivering learning to your whole class. 
+                </p>
+                
+                <h2 class="govuk-heading-l">Between 10:45am and 12pm</h2>
+
+                <h3 class="govuk-heading-m">Morning lessons continued</h3>
+
+                <p class="govuk-body">
+                    You’ll continue with your morning lessons and activities. 
+                </p>
+
+                <h2 class="govuk-heading-l">Between 12pm and 1pm</h2>
+
+                <h3 class="govuk-heading-m">Lunch break</h3>
+
+                <p class="govuk-body">
+                    You can use your lunch break to recharge and prepare for the afternoon sessions. It's also an opportunity to interact with colleagues and discuss any ongoing classroom issues. 
+                </p>
+
+                <h2 class="govuk-heading-l">Between 1pm and 3:30pm</h2>
+
+                <h3 class="govuk-heading-m">Afternoon lessons and activities </h3>
+
+                <p class="govuk-body">
+                    You’ll continue your day with afternoon lessons, which might include some observations 
+                </p>
+
+                <h2 class="govuk-heading-l">Between 3:30pm and 5pm</h2>
+
+                <h3 class="govuk-heading-m">After school activities</h3>
+
+                <p class="govuk-body">
+                    After the students leave, you might have coaching sessions, training or co-planning meetings with your mentors. You might spend some time checking emails, marking or creating and collecting resources. 
+                </p>
+
+                <h2 class="govuk-heading-l">Between 5pm and 7pm</h2>
+
+                <h3 class="govuk-heading-m">Evening preparation and reflection</h3>
+
+                <p class="govuk-body">
+                    You might spend some of your evenings with additional lesson planning and reflection on the day's activities. You might review what worked well and what could be improved, preparing for the next day. 
+                </p>
+                
+            </div>
+            
+           
+        </div>
+        
+      
+   </div>
+</section>
+
+{% include "includes/feedbackcta.html" %}
+
+
+
+
+{% endblock %}
