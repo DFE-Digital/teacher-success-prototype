@@ -35,12 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (utms.utm_test) {
-    const testNameEl = document.getElementById("testname");
+  const testNameEl = document.getElementById("testname");
 
-    if (testNameEl) {
-      testNameEl.textContent = utms.utm_test;
-    }
+  if (testNameEl) {
+    testNameEl.textContent = utms.utm_test;
   }
+
+  // ✅ Add class to body
+  document.body.classList.add(`utm-${utms.utm_test}`);
+}
 
   //email link 
 

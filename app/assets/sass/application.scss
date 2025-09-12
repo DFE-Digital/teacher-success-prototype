@@ -1380,3 +1380,42 @@ ul.steps{
     border-bottom: 1px solid #b1b4b6;
   }
 }
+
+
+//dynamic images code
+
+.normal-image{
+  display: block;
+}
+.primary-image, .secondary-image{
+  display: none;
+}
+
+.utm-primary{
+
+  .primary-image{
+    display: block;
+  }
+  .secondary-image{
+    display: none;
+  }
+  .normal-image{
+    display: none;
+  }
+
+}
+
+
+.utm-secondary{
+
+  .primary-image{
+    display: none;
+  }
+  .secondary-image{
+    display: block;
+  }
+  .normal-image{
+    display: none;
+  }
+
+}
