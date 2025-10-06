@@ -106,6 +106,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+if ($(".schoolSelecter")[0]){
+
+      var selectEl = document.querySelector('.schoolSelecter')
+      accessibleAutocomplete.enhanceSelectElement({
+        autoselect: true,
+        confirmOnBlur: true,
+        defaultValue: "",
+        minLength: 3,
+        selectElement: selectEl
+      })
+
+      var queryStringParameters = window.location.search
+      var previouslySubmitted = queryStringParameters.length > 0
+      if (previouslySubmitted) {
+        var submittedEl = document.querySelector('.submitted')
+        submittedEl.classList.remove('submitted--hidden')
+        var params = new URLSearchParams(document.location.search.split('?')[1])
+        document.querySelector('.submitted__hide-school').innerHTML = params.get('hide-school')
+      }
+
+  }
+
   
 
 

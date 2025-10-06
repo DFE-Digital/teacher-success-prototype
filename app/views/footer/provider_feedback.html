@@ -1,0 +1,179 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Give training provider feedback" %}
+
+{% block content %}
+
+
+<div class="dfe-content-page--header govuk-!-padding-top-5 govuk-!-padding-bottom-1">
+    <div class="dfe-width-container">
+        <div class="govuk-grid-row govuk-!-padding-top-1">
+            <div class="govuk-grid-column-three-quarters">
+                {% set flashMessage = flash[0] %}
+                {{ govukNotificationBanner({
+                    html: "<h2 class=\"govuk-heading-m\">" + flashMessage.title + "</h2><p class=\"govuk-body\">" + flashMessage.detail + "</p>",
+                    type: "success",
+                    icon: false
+                }) if flash and flash.length }}
+                <h1 class="govuk-heading-xl govuk-!-padding-top-1">{{pageName}}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+   <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+            
+            <div class="govuk-grid-column-three-quarters">
+
+                <form method="post" action="">
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            <h2 class="govuk-fieldset__heading">
+                                Who was your training provider?
+                            </h2>
+                        </legend>
+
+                        <div class="autocomplete-wrapper">
+                            <div id="school-hint" class="govuk-hint">
+                                Enter the name or of your training provider.
+                            </div>
+                            <select class="schoolSelecter" name="profile[hiddenPlace]" id="profile[hiddenPlace]" aria-describedby="school-hint">
+                                <option value="">Select a school</option>
+                                <option value="Nottingham University">Nottingham University</option>
+                                <option value="Derby University">Derby University</option>
+                                <option value="Leicester University">Leicester University</option>
+                                <option value="Bournemouth University">Bournemouth University</option>
+                                <option value="Cambridge University">Cambridge University</option>
+                            </select>
+                        </div>
+                    
+                    </fieldset>
+                </div>
+                  
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h2 class="govuk-fieldset__heading">
+                            How satisfied are you with your training provider? 
+                        </h2>
+                        </legend>
+                        <div class="govuk-radios" data-module="govuk-radios">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="satisfied" name="satisfied" type="radio" value="Highly satisfied" aria-describedby="satisfied-item-hint">
+                                <label class="govuk-label govuk-radios__label" for="satisfied">
+                                    Highly satisfied
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="satisfied-2" name="satisfied" type="radio" value="Somewhat satisfied ">
+                                <label class="govuk-label govuk-radios__label" for="satisfied-2">
+                                    Somewhat satisfied 
+                                </label> 
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="satisfied-3" name="satisfied" type="radio" value="Neither satisfied nor dissatisfied">
+                                <label class="govuk-label govuk-radios__label" for="satisfied-3">
+                                    Neither satisfied nor dissatisfied
+                                </label> 
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="satisfied-4" name="satisfied" type="radio" value="Somewhat dissatisfied">
+                                <label class="govuk-label govuk-radios__label" for="satisfied-4">
+                                    Somewhat dissatisfied
+                                </label> 
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="satisfied-5" name="satisfied" type="radio" value="Highly dissatisfied">
+                                <label class="govuk-label govuk-radios__label" for="satisfied-5">
+                                    Highly dissatisfied
+                                </label> 
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                
+                    
+                <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count" data-maxlength="1200">
+                    <h2 class="govuk-label-wrapper">
+                        <label class="govuk-label govuk-label--m" for="with-hint">
+                            What feedback would you like to give? 
+                        </label>
+                    </h2>
+                    <div id="with-hint-hint" class="govuk-hint">
+                        Do not include any information that could identify you personally (such as your name or the name of your provider). 
+                    </div>
+                    <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="15" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+                        You can enter up to 1200 characters
+                    </div>
+                </div>
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h2 class="govuk-fieldset__heading">
+                           Would you like this feedback to be anonymous?
+                        </h2>
+                        <div id="with-hint-hint" class="govuk-hint">
+                            Any information in your feedback that can identify you will be removed or censored to ensure you are not identifiable.
+                        </div>
+                        </legend>
+                        <div class="govuk-radios" data-module="govuk-radios">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="anonymous" name="anonymous" type="radio" value="Yes" aria-describedby="anonymous-item-hint">
+                                <label class="govuk-label govuk-radios__label" for="anonymous">
+                                    Yes, keep me anonymous
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="anonymous-2" name="anonymous" type="radio" value="No">
+                                <label class="govuk-label govuk-radios__label" for="anonymous-2">
+                                    No
+                                </label> 
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+
+                    {{ govukButton({
+                    text: "Submit feedback"
+                    }) }}
+
+                    </form>
+
+            
+            </div>
+
+        </div>
+        
+      
+   </div>
+</section>
+
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      var theSchool = $('.autocomplete-wrapper').data("chosen");
+      $('.autocomplete__input').val(theSchool);
+
+      setTimeout(
+      function()
+      {
+        $('.autocomplete__menu').blur();
+        $('.autocomplete__menu').removeClass('autocomplete__menu--visible');
+        $('.autocomplete__menu').addClass('autocomplete__menu--hidden');
+
+      }, 100);
+
+    })
+  </script>
+{% endblock %}
