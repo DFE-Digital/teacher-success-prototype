@@ -103,13 +103,39 @@
                             What feedback would you like to give? 
                         </label>
                     </h2>
-                    <div id="with-hint-hint" class="govuk-hint">
-                        Do not include any information that could identify you personally (such as your name or the name of your provider). 
-                    </div>
                     <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="15" aria-describedby="with-hint-info with-hint-hint"></textarea>
                     <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
                         You can enter up to 1200 characters
                     </div>
+                </div>
+
+                <details class="govuk-details">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                        What happens to this feedback
+                        </span>
+                    </summary>
+                    <div class="govuk-details__text">
+                        The Department for Education will review your feedback and pass it on to your training provider during scheduled meetings to support continuous improvement of their training offer.
+                    </div>
+                </details>
+
+                <div class="govuk-form-group">
+                    <h2 class="govuk-label-wrapper">
+                        <label class="govuk-label govuk-label--m" for="yourname">
+                        What is your name?
+                        </label>
+                    </h2>
+                    <input class="govuk-input" id="yourname" name="yourname" type="text">
+                </div>
+
+                <div class="govuk-form-group">
+                    <h2 class="govuk-label-wrapper">
+                        <label class="govuk-label govuk-label--m" for="email">
+                        What is your email?
+                        </label>
+                    </h2>
+                    <input class="govuk-input" id="email" name="email" type="text">
                 </div>
 
                 <div class="govuk-form-group">
@@ -119,7 +145,7 @@
                            Would you like this feedback to be anonymous?
                         </h2>
                         <div id="with-hint-hint" class="govuk-hint">
-                            Any information in your feedback that can identify you will be removed or censored to ensure you are not identifiable.
+                            If you select yes but your feedback includes information that indicates a safeguarding concern we still have a duty to share this with our safeguarding team.
                         </div>
                         </legend>
                         <div class="govuk-radios" data-module="govuk-radios">
