@@ -201,34 +201,24 @@ function detectMobileBrowser() {
   const ua = navigator.userAgent;
   const vendor = navigator.vendor;
 
-  // Check if user is on a mobile device
+  // Check if on mobile
   const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(ua);
-  if (!isMobile) return null; // not mobile
+  if (!isMobile) return null;
 
   // Detect mobile browser
-  if (/edg/i.test(ua)) {
-    return "Microsoft Edge (Mobile)";
-  } else if (/crios/i.test(ua)) {
-    return "Google Chrome (iOS)";
-  } else if (/chrome/i.test(ua) && /google inc/i.test(vendor)) {
-    return "Google Chrome (Android)";
-  } else if (/fxios/i.test(ua)) {
-    return "Mozilla Firefox (iOS)";
-  } else if (/safari/i.test(ua) && /apple/i.test(vendor)) {
-    return "Safari (Mobile)";
-  } else if (/opr\//i.test(ua)) {
-    return "Opera (Mobile)";
-  }
+  if (/edg/i.test(ua)) return "edge-mobile";
+  if (/crios/i.test(ua)) return "chrome-mobile"; // Chrome on iOS
+  if (/chrome/i.test(ua) && /google inc/i.test(vendor)) return "chrome-mobile";
+  if (/fxios/i.test(ua)) return "firefox-mobile";
+  if (/safari/i.test(ua) && /apple/i.test(vendor)) return "safari-mobile";
+  if (/opr\//i.test(ua)) return "opera-mobile";
 
-  return "Unknown Mobile Browser";
+  return "unknown-mobile";
 }
 
-const mobileBrowser = detectMobileBrowser();
-
-const browserEl = document.getElementById("browser");
-
-if (mobileBrowser) {
-  browserEl.textContent = `You’re using: ${mobileBrowser}`;
-} else {
-  browserEl.textContent = "You’re not on a mobile device.";
+// Show the correct div
+const browserId = detectMobileBrowser();
+if (browserId) {
+  const el = document.getElementById(browserId);
+  if (el) el.style.display = "block";
 }
